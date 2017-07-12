@@ -8,6 +8,8 @@
             <title>Mojoland | Adventure Park</title>
             <link rel="stylesheet" href="css/bootstrap.min.css">
             <link rel="stylesheet" href="css/styles.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
             <style type="text/css">
                 .icon-bar {
                     background-color: black;
@@ -25,9 +27,9 @@
         </head>
         <body>
             <div id="logo" align="center">
-                <img src="img/logo.png" width="200" alt="Mojoland logo">
+                <img src="img/logo.png" width="150" alt="Mojoland logo">
             </div>
-            <nav class="navbar">
+            <nav class="navbar" style="margin-bottom: 0px; border: 0px;">
                 <div class="container-fluid">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -64,22 +66,25 @@
                 <div class="video-container">
                     <div class="title-container">
                         <div class="headline">
-                            <h1>Welcome to our Company</h1>
+                            <h1><!-- Add Text if required --></h1>
 
                         </div>
                         <div class="description">
-                            <div class="inner">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+                            <div class="inner"><!-- Add text if required --></div>
                         </div>
                     </div>
-                    <div class="filter"></div>
-                    <video autoplay loop class="fillWidth">
-                        <source src="http://dfcb.github.io/BigVideo.js/vids/dock.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.</video>
+
+                    <video autoplay muted loop width="100%">
+                        <source src="img/video.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.</video>
                     <div class="poster hidden">
-                        <img src="http://www.videojs.com/img/poster.jpg" alt="">
+                        <img src="img/cover.jpg" alt="">
                     </div>
                 </div>
             </div>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-            <script src="js/bootstrap.min.js"></script>
+
+            <div class="container-fluid">
+                <h1>Heading</h1>
+            </div>
+
         </body>
     </html>

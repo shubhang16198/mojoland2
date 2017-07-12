@@ -39,28 +39,3 @@
     text-align: center;
     color: #fff;
 }
-.video-container .description .inner {
-    font-size: 1em;
-    width: 45%;
-    margin: 0 auto;
-}
-.video-container .link {
-    position: absolute;
-    bottom: 3em;
-    width: 100%;
-    text-align: center;
-    z-index: 1001;
-    font-size: 2em;
-    color: #fff;
-}
-.video-container .link a {
-    color: #fff;
-}
-.video-container video {
-    position: absolute;
-    z-index: 0;
-    bottom: 0;
-}
-.video-container video.fillWidth {
-    width: 100%;
-}
