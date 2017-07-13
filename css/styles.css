@@ -253,7 +253,7 @@ span.imgcaption {
     padding:10px;
     z-index: 10;
     color: white;
-    background: rgba(0, 0, 0, 0.6);
+    background-image: linear-gradient(rgba(0,0,0,0), black);
     left:0;
     position: absolute;
     -webkit-transition: all 0.7s ease;
