@@ -219,3 +219,23 @@
     background: white;
     border-bottom: 10px solid rgba(0, 0, 0, 0.1);
 }
+
+.zoomonhover div{
+    overflow: hidden;
+}
+
+.zoomonhover img{
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.zoomonhover img:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
