@@ -27,13 +27,29 @@
                     display: inline-block;
                 }
 
+                .container {
+                    width:70%;
+                }
+
             </style>
+            <script type="text/javascript">
+                $(window).scroll(function() {
+                    var a = $("#logo").height() + $("#navigation-bar").height();
+                    if($(document).scrollTop() > a) {
+                        $('#navigation-bar').addClass("topfixed");
+                    }
+                    if($(document).scrollTop() < (a - 100)) {
+                        $('#navigation-bar').removeClass("topfixed");
+                    }
+                });
+
+            </script>
         </head>
         <body>
             <div id="logo" align="center">
                 <img src="img/logo.png" width="150" alt="Mojoland logo">
             </div>
-            <nav class="navbar" style="margin-bottom: 0px; border: 0px;">
+            <nav class="navbar" id="navigation-bar" style="margin-bottom: 0px; border: 0px;">
                 <div class="container-fluid">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -85,8 +101,7 @@
                     </div>
                 </div>
             </div>
-
-            <section class="main" style="position: relative; top: -40px;">
+            <section class="main" id="main-section" style="position: relative; top: -40px;">
                 <div class="container">
                     <div class="row" style="background: #fff; padding-top: 10px;">
                         <div class="col-lg-4">
@@ -219,14 +234,10 @@
                             </form>
                         </div>
                     </div>
-
-
-                    <div class="row"><br><br>
-                        <img src="img/pool.jpg" alt="Pool" class="img-responsive">
-                    </div>
-
                 </div>
             </section>
+            <div class="container">
 
+            </div>
         </body>
     </html>
