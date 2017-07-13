@@ -14,6 +14,7 @@
             <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
             <script src="js/bootstrap.min.js"></script>
             <script src="js/numberpicker.js"></script>
+            <script src="js/captions.js"></script>
             <style type="text/css">
                 .icon-bar {
                     background-color: black;
@@ -42,6 +43,7 @@
                         $('#navigation-bar').removeClass("topfixed");
                     }
                 });
+
 
             </script>
         </head>
@@ -240,16 +242,52 @@
             <div class="container">
                 <div class="row zoomonhover">
                     <div class="col-md-3 col-lg-3" style="padding: 5px;">
-                        <img src="img/panel_1.png" alt="slides" height="200px;" class="img-responsive">
+                        <div  onmouseover="showcaption('captionpanel1');" onmouseout="hidecaption('captionpanel1')">
+                            <span class="imgcaption" id="captionpanel1">
+                                <h3>Inshahallah!</h3>
+                                <p>Boys Played well. Boys played very well. Boys Played well. Boys played very well. Boys Played well. Boys played very well.
+                                 Boys Played well. Boys played very well. Boys played very well. Boys played very well. Boys played very well. Boys played very well.
+                                 Boys played very well. Boys played very well. Boys played very well. Boys played very well. Boys played very well. Boys played very well.
+                                 Boys played very well. Boys played very well. Boys played very well. Boys played very well. Boys played very well. Boys played very well.</p>
+                            </span>
+                            <img src="img/panel_1.png" alt="slides" height="200px;" class="img-responsive">
+                        </div>
                     </div>
                     <div class="col-md-3 col-lg-3" style="padding: 5px;">
-                        <img src="img/panel_3.png" alt="slides" class="img-responsive">
+                        <div onmouseover="showcaption('captionpanel2');" onmouseout="hidecaption('captionpanel2')">
+                            <span class="imgcaption" id="captionpanel2">
+                                <h3>Inshahallah!</h3>
+                                <p>Boys Played well. Boys played very well. Boys Played well. Boys played very well. Boys Played well. Boys played very well.
+                                 Boys Played well. Boys played very well. Boys played very well. Boys played very well. Boys played very well. Boys played very well.
+                                 Boys played very well. Boys played very well. Boys played very well. Boys played very well. Boys played very well. Boys played very well.
+                                 Boys played very well. Boys played very well. Boys played very well. Boys played very well. Boys played very well. Boys played very well.</p>
+                            </span>
+                            <img src="img/panel_3.png" alt="slides" height="200px;" class="img-responsive" >
+                        </div>
                     </div>
                     <div class="col-md-3 col-lg-3" style="padding: 5px;">
-                        <img src="img/panel_4.png" alt="slides" class="img-responsive">
+                        <div onmouseover="showcaption('captionpanel3');" onmouseout="hidecaption('captionpanel3')">
+                            <span class="imgcaption" id="captionpanel3">
+                                <h3>Inshahallah!</h3>
+                                <p>Boys Played well. Boys played very well. Boys Played well. Boys played very well. Boys Played well. Boys played very well.
+                                 Boys Played well. Boys played very well. Boys played very well. Boys played very well. Boys played very well. Boys played very well.
+                                 Boys played very well. Boys played very well. Boys played very well. Boys played very well. Boys played very well. Boys played very well.
+                                 Boys played very well. Boys played very well. Boys played very well. Boys played very well. Boys played very well. Boys played very well.</p>
+                            </span>
+                            <img src="img/panel_4.png" alt="slides" height="200px;" class="img-responsive" >
+                        </div>
                     </div>
                     <div class="col-md-3 col-lg-3" style="padding: 5px;">
-                        <img src="img/panel_2.png" alt="slides" class="img-responsive">
+                        <div onmouseover="showcaption('captionpanel4');" onmouseout="hidecaption('captionpanel4')">
+                            <span class="imgcaption" id="captionpanel4">
+                                <h3>Inshahallah!</h3>
+                                <p>Boys Played well. Boys played very well. Boys Played well. Boys played very well. Boys Played well. Boys played very well.
+                                 Boys Played well. Boys played very well. Boys played very well. Boys played very well. Boys played very well. Boys played very well.
+                                 Boys played very well. Boys played very well. Boys played very well. Boys played very well. Boys played very well. Boys played very well.
+                                 Boys played very well. Boys played very well. Boys played very well. Boys played very well. Boys played very well. Boys played very well.</p>
+                            </span>
+                            <img src="img/panel_2.png" alt="slides" height="200px;" class="img-responsive" >
+                        </div>
                     </div>
                 </div>
             </div>
