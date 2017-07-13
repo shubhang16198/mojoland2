@@ -9,7 +9,11 @@
             <link rel="stylesheet" href="css/bootstrap.min.css">
             <link rel="stylesheet" href="css/styles.css">
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script type="text/javascript" src="http://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+            <script type="text/javascript" src="http://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+            <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
             <script src="js/bootstrap.min.js"></script>
+            <script src="js/numberpicker.js"></script>
             <style type="text/css">
                 .icon-bar {
                     background-color: black;
@@ -75,16 +79,154 @@
                     </div>
 
                     <video autoplay muted loop width="100%">
-                        <source src="img/video.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.</video>
+                        <source src="img/videoback.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.</video>
                     <div class="poster hidden">
                         <img src="img/cover.jpg" alt="">
                     </div>
                 </div>
             </div>
 
-            <div class="container-fluid">
-                <h1>Heading</h1>
-            </div>
+            <section class="main" style="position: relative; top: -40px;">
+                <div class="container">
+                    <div class="row" style="background: #fff; padding-top: 10px;">
+                        <div class="col-lg-4">
+                            <div class="slot">
+                                <div class="blockHead"><span class="blocktext">Book Tickets</span>
+                                </div>
+                                <a href="#" class="ticket">
+                                    <b></b>
+                                    <c></c>
+                                    <d></d>
+                                    <em>
+                                        <b></b>
+                                        <c></c>
+                                    </em>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <form class="navbar-form">
+                                <div class="row">
+                                    <div class="form-group col-md-4">
+                                        <label for="when" class="control-label">Date</label><br>
+                                        <input type="text" id="when" name="when" placeholder="Date" style="padding: 5px; border: 1px solid #bbb; border-radius: 2px;" />
+                                        <script type="text/javascript">
+                                            $(function() {
+                                                $('input[name="when"]').daterangepicker({
+                                                    singleDatePicker: true,
+                                                    showDropdowns: true
+                                                },
+                                                function (start, end, label){
+                                                });
+                                            });
+                                        </script>
+                                    </div>
+
+                                    <div class="form-group col-md-4">
+                                        <label for="activity" class="control-label">Activity</label><br>
+                                        <select name="activity" id="activity" class="form-control">
+                                            <option>Lagoon Water Park</option>
+                                            <option>Adventura Adventure Park</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4"></div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-md-4 form-group">
+                                        <div class="popover-markup">
+                                            <div class="trigger form-group"><i class="fa fa-users input-icon input-icon-highlight"></i>
+                                                <label class="control-label">Number of tickets</label>
+                                                <input type="number" name="tickets" id="tickets" class="form-control" value="1" disabled style="cursor: pointer; background-color: #fff; padding-right: 0; font-size: 15px;">
+                                            </div>
+                                            <div class="content hide">
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-5"><strong>Children</strong><br> <i> &nbsp;</i></label>
+                                                    <div class="input-group number-spinner col-md-7">
+                                                        <span class="input-group-btn">
+                                                            <a class="btn btn-danger" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></a>
+                                                        </span>
+                                                        <input type="text" disabled name="children" id="children" class="form-control text-center" value="0" max=9 min=0>
+                                                        <span class="input-group-btn">
+                                                            <a class="btn btn-info" data-dir="up"><span class="glyphicon glyphicon-plus"></span></a>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-5"><strong>Students</strong><br> <i>&nbsp;</i></label>
+                                                    <div class="input-group number-spinner col-md-7">
+                                                        <span class="input-group-btn">
+                                                            <a class="btn btn-danger" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></a>
+                                                        </span>
+                                                        <input type="text" disabled name="students" id="students" class="form-control text-center" value="0" max=9 min=0>
+                                                        <span class="input-group-btn">
+                                                            <a class="btn btn-info" data-dir="up"><span class="glyphicon glyphicon-plus"></span></a>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-5"><strong>Adults</strong><br> <i> &nbsp;</i></label>
+                                                    <div class="input-group number-spinner col-md-7">
+                                                        <span class="input-group-btn">
+                                                            <a class="btn btn-danger" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></a>
+                                                        </span>
+                                                        <input type="text" disabled name="adults" id="adults" class="form-control text-center" value="1" max=9 min=1>
+                                                        <span class="input-group-btn">
+                                                            <a class="btn btn-info" data-dir="up"><span class="glyphicon glyphicon-plus"></span></a>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-5"><strong>Senior Citizen</strong><br> <i> &nbsp;</i></label>
+                                                    <div class="input-group number-spinner col-md-7">
+                                                        <span class="input-group-btn">
+                                                            <a class="btn btn-danger" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></a>
+                                                        </span>
+                                                        <input type="text" disabled name="senior" id="senior" class="form-control text-center" value="0" max=9 min=0>
+                                                        <span class="input-group-btn">
+                                                            <a class="btn btn-info" data-dir="up"><span class="glyphicon glyphicon-plus"></span></a>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-5"><strong>Couples</strong><br> <i> &nbsp;</i></label>
+                                                    <div class="input-group number-spinner col-md-7">
+                                                        <span class="input-group-btn">
+                                                            <a class="btn btn-danger" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></a>
+                                                        </span>
+                                                        <input type="text" disabled name="couples" id="couples" class="form-control text-center" value="0" max=9 min=0>
+                                                        <span class="input-group-btn">
+                                                            <a class="btn btn-info" data-dir="up"><span class="glyphicon glyphicon-plus"></span></a>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <a class="btn btn-default btn-block demise">Select</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="activity" class="control-label">Price</label><br>
+                                        <input type="text" class="form-control" disabled>
+                                    </div>
+                                    <div class="col-md-4"><br>
+                                        <button class="btn btn-success btn-block">
+                                            <span style="font-weight: bold;">
+                                                Book Now!
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+
+                    <div class="row"><br><br>
+                        <img src="img/pool.jpg" alt="Pool" class="img-responsive">
+                    </div>
+
+                </div>
+            </section>
 
         </body>
     </html>
