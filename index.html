@@ -280,7 +280,7 @@
                     </div>
                 </div>
             </section>
-            <div class="container">
+            <div class="container" id="panelcontainer">
                 <div class="row zoomonhover">
                     <div class="col-md-3 col-lg-3" style="padding: 5px;">
                         <div  onmouseover="showcaption('captionpanel1');" onmouseout="hidecaption('captionpanel1')">
@@ -332,7 +332,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container">
+            <div class="container" id="secondcontainer">
                 <div class="row">
                     <div class="col-md-6 col-lg-6" style="padding-left: 0;">
                         <img src="img/mascot_WHITE.jpg" alt="Mascot" class="img-responsive">
@@ -364,7 +364,7 @@
                 </div>
             </div>
 
-            <div class="container">
+            <div class="container" id="mapcontainer">
                 <div class="row">
                     <div class="col-md-8 col-lg-8">
                         <div id="gmap-holder">
@@ -398,7 +398,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container">
+            <div class="container" id="footercontainer">
                 <div class="row">
                     <div class="col-md-3 col-lg-3">
                         <h4>Lagoon Water Park</h4>
@@ -469,5 +469,13 @@
                     </div>
                 </div>
             </div>
+            <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+            <script type="text/javascript">
+                window.sr = ScrollReveal();
+                sr.reveal('#panelcontainer');
+                sr.reveal('#secondcontainer');
+                sr.reveal('#mapcontainer');
+                sr.reveal('#footercontainer');
+            </script>
         </body>
     </html>
