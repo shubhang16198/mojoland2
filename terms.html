@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+            <title>Mojoland | Adventure Park</title>
+            <link rel="stylesheet" href="css/bootstrap.min.css">
+            <link rel="stylesheet" href="css/styles.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+            <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/numberpicker.js"></script>
+            <script src="js/captions.js"></script>
+            <style type="text/css">
+                .icon-bar {
+                    background-color: black;
+                }
+                .navbar-nav {
+                    width: 100%;
+                    text-align: center;
+                }
+                .navbar-nav > li {
+                    float: none;
+                    display: inline-block;
+                }
+
+                .container {
+                    width:70%;
+                }
+
+            </style>
+            <script type="text/javascript">
+                $(window).scroll(function() {
+                    var a = $("#logo").height() + $("#navigation-bar").height();
+                    if($(document).scrollTop() > a) {
+                        $('#navigation-bar').addClass("topfixed");
+                    }
+                    if($(document).scrollTop() < (a - 100)) {
+                        $('#navigation-bar').removeClass("topfixed");
+                    }
+                });
+
+                $(function() {
+                    $('#gmap-holder').click(function(e) {
+                        $(this).find('iframe').css('pointer-events', 'all');
+                    }).mouseleave(function(e) {
+                        $(this).find('iframe').css('pointer-events', 'none');
+                    });
+                });
+
+            </script>
+        </head>
+        <body>
+            <div id="top-line-wrap">
+                <div id="top-line">
+                    <div class="chunk">&nbsp;<span class="filler" style="background-color: rgb(107, 165, 189); height: 10px;"></span></div>
+                    <div class="chunk">&nbsp;<span class="filler" style="background-color: rgb(196, 160, 108); overflow: hidden; height: 10px; background-position: initial initial; background-repeat: initial initial;"></span></div>
+                    <div class="chunk">&nbsp;<span class="filler" style="background-color: rgb(255, 208, 140); height: 10px; overflow: hidden; background-position: initial initial; background-repeat: initial initial;"></span></div>
+                    <div class="chunk">&nbsp;<span class="filler" style="background-color: rgb(193, 80, 9); overflow: hidden; height: 10px; background-position: initial initial; background-repeat: initial initial;"></span></div>
+                    <div class="chunk">&nbsp;<span class="filler" style="background-color: rgb(71, 78, 81); overflow: hidden; height: 10px; background-position: initial initial; background-repeat: initial initial;"></span></div>
+                    <div class="chunk">&nbsp;<span class="filler" style="background-color: rgb(107, 165, 189); overflow: hidden; height: 10px; background-position: initial initial; background-repeat: initial initial;"></span></div>
+                    <div class="chunk">&nbsp;<span class="filler" style="background-color: rgb(196, 160, 108); overflow: hidden; height: 10px; background-position: initial initial; background-repeat: initial initial;"></span></div>
+                    <div class="chunk">&nbsp;<span class="filler" style="background-color: rgb(255, 208, 140); height: 10px; overflow: hidden; background-position: initial initial; background-repeat: initial initial;"></span></div>
+                    <div class="chunk">&nbsp;<span class="filler" style="background-color: rgb(193, 80, 9); overflow: hidden; height: 10px; background-position: initial initial; background-repeat: initial initial;"></span></div>
+                    <div class="chunk">&nbsp;<span class="filler" style="background-color: rgb(71, 78, 81); overflow: hidden; height: 10px; background-position: initial initial; background-repeat: initial initial;"></span></div>
+                    <div class="chunk">&nbsp;<span class="filler" style="background-color: rgb(107, 165, 189); height: 10px; overflow: hidden; background-position: initial initial; background-repeat: initial initial;"></span></div>
+                    <div class="chunk">&nbsp;<span class="filler" style="background-color: rgb(196, 160, 108); height: 10px; overflow: hidden; background-position: initial initial; background-repeat: initial initial;"></span></div>
+                    <div class="chunk">&nbsp;<span class="filler" style="background-color: rgb(255, 208, 140); height: 10px; overflow: hidden; background-position: initial initial; background-repeat: initial initial;"></span></div>
+                    <div class="chunk">&nbsp;<span class="filler" style="background-color: rgb(193, 80, 9); height: 10px; overflow: hidden; background-position: initial initial; background-repeat: initial initial;"></span></div>
+                    <div class="chunk">&nbsp;<span class="filler" style="background-color: rgb(71, 78, 81); overflow: hidden; height: 10px; background-position: initial initial; background-repeat: initial initial;"></span></div>
+                    <div class="chunk">&nbsp;<span class="filler" style="background:#6ba5bd"></span></div>
+                    <div class="chunk">&nbsp;<span class="filler" style="background:#c4a06c"></span></div>
+                    <div class="chunk">&nbsp;<span class="filler" style="background:#ffd08c"></span></div>
+                    <div class="chunk">&nbsp;<span class="filler" style="background:#c15009"></span></div>
+                    <div class="chunk">&nbsp;<span class="filler" style="background:#474e51"></span></div>
+                    <div class="chunk">&nbsp;<span class="filler" style="background:#6ba5bd"></span></div>
+                    <div class="chunk">&nbsp;<span class="filler" style="background:#c4a06c"></span></div>
+                    <div class="chunk">&nbsp;<span class="filler" style="background:#ffd08c"></span></div>
+                    <div class="chunk">&nbsp;<span class="filler" style="background:#c15009"></span></div>
+                    <div class="chunk">&nbsp;<span class="filler" style="background:#474e51"></span></div>
+                    <div class="chunk">&nbsp;<span class="filler" style="background:#6ba5bd"></span></div>
+                    <div class="chunk">&nbsp;<span class="filler" style="background:#c4a06c"></span></div>
+                    <div class="chunk">&nbsp;<span class="filler" style="background:#ffd08c"></span></div>
+                    <div class="chunk">&nbsp;<span class="filler" style="background:#c15009"></span></div>
+                    <div class="chunk">&nbsp;<span class="filler" style="background:#474e51"></span></div>
+                </div>
+            </div>
+            <div id="logo" align="center"><br>
+                <img src="img/logo.png" width="150" alt="Mojoland logo">
+            </div>
+            <nav class="navbar" id="navigation-bar" style="margin-bottom: 0px; border: 0px;">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                            <li><a href="#">Link</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">One more separated link</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="container">
+                <div class="row" align="center">
+                    <h1>
+                        Terms and Conditions
+                    </h1>
+                </div>
+                <div class="row">
+                    <p>Mojoland is owned and operated by Mojoland India Limited, a company incorporated under the laws of India, having its registered office at C300, Surajmal Vihar Delhi- 110092. Your use of the Website and services and tools are governed by the following terms and conditions ("Terms of Use") as applicable to the Website including the applicable policies which are incorporated herein by way of reference. If you transact on the Website, You shall be subject to the policies that are applicable to the Website for such transaction. By mere use of the Website, You shall be contracting with Mojoland India Limited and these terms and conditions including the policies constitute your binding obligations, with Mojoland India Limited. For the purpose of these Terms of Use, wherever the context so requires "You" or "User" shall mean any natural or legal person who has agreed to become a buyer on the Website by providing Registration Data while registering on the Website as Registered User using the computer systems. Mojoland allows the User to surf the Website or making purchases without registering on the Website. The term "We", "Us", "Our" shall mean Mojoland India Limited.</p>
+
+                    <p>When You use any of the services provided by Us through the Website, including but not limited to, (e.g. Product Reviews, Seller Reviews), You will be subject to the rules, guidelines, policies, terms, and conditions applicable to such service, and they shall be deemed to be incorporated into this Terms of Use and shall be considered as part and parcel of this Terms of Use. We reserve the right, at our sole discretion, to change, modify, add or remove portions of these Terms of Use, at any time without any prior written notice to you. It is your responsibility to review these Terms of Use periodically for updates / changes. Your continued use of the Website following the posting of changes will mean that you accept and agree to the revisions. As long as you comply with these Terms of Use, We grant you a personal, nonexclusive, non-transferable, limited privilege to enter and use the Website.</p>
+
+                    <p>ACCESSING, BROWSING OR OTHERWISE USING THE SITE INDICATES YOUR AGREEMENT TO ALL THE TERMS AND CONDITIONS UNDER THESE TERMS OF USE, SO PLEASE READ THE TERMS OF USE CAREFULLY BEFORE PROCEEDING. Refund and Cancellation Policy Cancellation and Refund will be at the sole discretion of the Event Organizer. If any event is cancelled by us, refunds will be processed through the same online mode in 10-12 days.</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row" align="center">
+                    <h1>
+                        Privacy Policy
+                    </h1>
+                </div>
+                <div class="row">
+                    <p>For us privacy for our valued customer is very important. We strongly believe that the personal information of our customers should not be shared with the third party without the prior consent or request from the customer. Privacy is the right of an individual and at Mojoland India Limited. The information of the customer such as contact no., email, addresses etc. is used only for the internal purpose and not for sale. Your contact information is stored in our database and is only used to contact you during the course of your stay with us for sharing the status of your registration with us and then after for announcement of our latest events. We at Mojoland India Limited condemn the unauthorized reach and misuse and/or disclosure of the personal information of the customer and we have strict guidelines and high security features to prevent the same. Any changes in our 'Privacy Policy' will be posted here on the website.</p>
+
+                    <p>SECURE ONLINE PAYMENTS The visitor on our website please take a note that your name, email address and other personal information submitted on our website may be stored with us and may also appear on the website. Like other platforms our server log files also receives general information such as IP address of the visitor, cookie etc. For the financial transactions by credit card Mojoland India Limited uses a 3rd party secure payment gateway provided by "PayU" and the credit card details are 'not stored' with, instead the Mojoland India Limited, information is securely stored and encrypted with Visa/MasterCard. Smart Cookies We use 'Cookies' to keep track of your current shopping session to personalise your experience and so that you may retrieve your shopping cart at any time. 'Cookies' are tiny text files which our Website places on your computer's hard drive to store information about your shopping session and to identify your computer.</p>
+                    <br><br>
+                </div>
+            </div>
+            <div class="container" id="footercontainer">
+                <div class="row">
+                    <div class="col-md-3 col-lg-3">
+                        <h4>Lagoon Water Park</h4>
+                        <small>
+                            Palm Beach <br>
+                            Wave Pool <br>
+                            Fun Pool <br>
+                            Slides <br>
+                            Pendulum <br>
+                            Volcanic Water Fall <br>
+                            Rain Dance <br>
+                            Foam Dance <br>
+                            The Beach Shack Cafe <br>
+                        </small>
+                    </div>
+                    <div class="col-md-3 col-lg-3">
+                        <h4>Adventura Adventure Park</h4>
+                        <small>
+                            ATV Track <br>
+                            Bungee Ejection <br>
+                            Free Fall <br>
+                            Zip lines <br>
+                            Rock Climbing <br>
+                            High Rope <br>
+                            Low Rope <br>
+                            Shooting <br>
+                            Archery <br>
+                            Sky Cycling (coming soon) <br>
+                        </small>
+                    </div>
+                    <div class="col-md-3 col-lg-3">
+                        <h4>Aero Sports</h4>
+                        <small>
+                            Paramotoring <br>
+                            Parasailing <br>
+                        </small>
+                    </div>
+                    <div class="col-md-3 col-lg-3">
+                        <h4>More Links</h4>
+                        <small>
+                            About <br>
+                            Upcoming Events <br>
+                            Mojoland House Rules <br>
+                            Mojoland Lagoon Entry Charges <br>
+                            Mojoland Lagoon Timings <br>
+                            Terms and Conditions <br>
+                        </small>
+                        <br>
+                        <h4>Contact Us</h4>
+                        <small>
+                            Phone Directory <br>
+                            Email <br>
+                        </small>
+                    </div>
+                </div>
+                <hr style="background-color: #ddd; color: #ddd; border-color: #ddd;">
+                <div class="row" style="padding: 10px;">
+                    <div class="col-md-3 col-lg-3">
+                        <strong>Stay connected</strong><br>
+                        <img src="img/facebook.svg" alt="Facebook" height="30px">
+                        <img src="img/twitter.svg" alt="Twitter" height="30px">
+                        <img src="img/instagram.svg" alt="Instagram" height="30px">
+                        <img src="img/googleplus.svg" alt="Google +" height="30px">
+                        <img src="img/youtube.svg" alt="Youtube" height="30px">
+                    </div>
+                    <div class="col-md-9 col-lg-9">
+                        <small>&copy; Mojoland, All rights reserved</small>
+                    </div>
+                </div>
+            </div>
+            <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+            <script type="text/javascript">
+                window.sr = ScrollReveal();
+                sr.reveal('#panelcontainer');
+                sr.reveal('#secondcontainer');
+                sr.reveal('#mapcontainer');
+                sr.reveal('#footercontainer');
+            </script>
+        </body>
+    </html>
