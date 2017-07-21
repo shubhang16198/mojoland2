@@ -10,6 +10,7 @@
             <link rel="stylesheet" href="css/styles.css">
             <link rel="stylesheet" href="css/fa/css/font-awesome.min.css">
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="js/jquery.js"></script>
             <script src="js/bootstrap.min.js"></script>
             <style type="text/css">
                 .icon-bar {
@@ -46,6 +47,27 @@
                         $(this).find('iframe').css('pointer-events', 'none');
                     });
                 });
+
+                function openpark(parkname) {
+                    id = "#" + parkname + "tab";
+                    if ($(id).hasClass("active"))
+                        return;
+                    $("#lagoonwaterpark").slideUp();
+                    $("#adventurepark").slideUp();
+                    $("#aerosports").slideUp();
+                    id = "#" + parkname;
+                    $(id).slideDown();
+                    $("#lagoonwaterparktab").removeClass("active");
+                    $("#adventureparktab").removeClass("active");
+                    $("#aerosportstab").removeClass("active");
+                    id = "#"+parkname+"tab";
+                    $(id).addClass("active");
+                }
+
+                $(document).ready(function() {
+                    $("#adventurepark").css("display", "none");
+                    $("#aerosports").css("display", "none");
+                })
 
             </script>
         </head>
@@ -121,15 +143,18 @@
                 </div>
             </nav>
             <div class="container">
-                <ul class="nav nav-tabs nav-justified">
-                    <li class="active"><a href="#">Water Park</a></li>
-                    <li><a href="#">Adventure Park</a></li>
-                    <li><a href="#">Aero Sports Park</a></li>
-                </ul>
-            </div>
-            <div class="container">
+                <br><br>
                 <div class="row">
-                    <div align="center">
+                    <ul class="nav nav-tabs nav-justified">
+                        <li class="active" id="lagoonwaterparktab"><a href="#" onclick="openpark('lagoonwaterpark');">Water Park</a></li>
+                        <li id="adventureparktab"><a href="#" onclick="openpark('adventurepark');">Adventure Park</a></li>
+                        <li id="aerosportstab"><a href="#" onclick="openpark('aerosports');">Aero Sports Park</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container tabcontent" id="lagoonwaterpark">
+                <div class="row">
+                    <div>
                         <h1>Lagoon Water Park</h1>
                     </div>
                     <div class="accordion">
@@ -171,6 +196,120 @@
                     <div class="col-md-9 col-lg-9">
                         <div class="row">
                             <h3 style="color: gray;">Explore the amazing Water Park!</h3>
+                            <h4>The ideal escape to calm countryside from the pressures of a busy life.</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3">
+                        <div class="row" style="background-color: #E5E5FF; border-radius: 10px; padding: 20px;">
+                            <div class="col-md-12 col-lg-12">
+                                <h4><strong>Hours <i class="fa fa-clock-o" aria-hidden="true"></i></strong></h4>
+                                <h5 style="color: #555;">11:00 AM to 06:00 PM</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container tabcontent" id="adventurepark">
+                <div class="row">
+                    <div>
+                        <h1>Adventura Adventure Park</h1>
+                    </div>
+                    <div class="accordion">
+                        <ul>
+                            <li>
+                                <div> <a href="#">
+                                    <h2>Title 1</h2>
+                                    <p>Description 1</p>
+                                </a> </div>
+                            </li>
+                            <li>
+                                <div> <a href="#">
+                                    <h2>Title 2</h2>
+                                    <p>Description 2</p>
+                                </a> </div>
+                            </li>
+                            <li>
+                                <div> <a href="#">
+                                    <h2>Title 3</h2>
+                                    <p>Description 3</p>
+                                </a> </div>
+                            </li>
+                            <li>
+                                <div> <a href="#">
+                                    <h2>Title 4</h2>
+                                    <p>Description 4</p>
+                                </a> </div>
+                            </li>
+                            <li>
+                                <div> <a href="#">
+                                    <h2>Title 5</h2>
+                                    <p>Description 5</p>
+                                </a> </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-9 col-lg-9">
+                        <div class="row">
+                            <h3 style="color: gray;">Explore the amazing Adventure Park!</h3>
+                            <h4>The ideal escape to calm countryside from the pressures of a busy life.</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3">
+                        <div class="row" style="background-color: #E5E5FF; border-radius: 10px; padding: 20px;">
+                            <div class="col-md-12 col-lg-12">
+                                <h4><strong>Hours <i class="fa fa-clock-o" aria-hidden="true"></i></strong></h4>
+                                <h5 style="color: #555;">11:00 AM to 06:00 PM</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container tabcontent" id="aerosports">
+                <div class="row">
+                    <div>
+                        <h1>Aero Sports Park</h1>
+                    </div>
+                    <div class="accordion">
+                        <ul>
+                            <li>
+                                <div> <a href="#">
+                                    <h2>Title 1</h2>
+                                    <p>Description 1</p>
+                                </a> </div>
+                            </li>
+                            <li>
+                                <div> <a href="#">
+                                    <h2>Title 2</h2>
+                                    <p>Description 2</p>
+                                </a> </div>
+                            </li>
+                            <li>
+                                <div> <a href="#">
+                                    <h2>Title 3</h2>
+                                    <p>Description 3</p>
+                                </a> </div>
+                            </li>
+                            <li>
+                                <div> <a href="#">
+                                    <h2>Title 4</h2>
+                                    <p>Description 4</p>
+                                </a> </div>
+                            </li>
+                            <li>
+                                <div> <a href="#">
+                                    <h2>Title 5</h2>
+                                    <p>Description 5</p>
+                                </a> </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-9 col-lg-9">
+                        <div class="row">
+                            <h3 style="color: gray;">Explore the amazing Aero Sports Park!</h3>
                             <h4>The ideal escape to calm countryside from the pressures of a busy life.</h4>
                         </div>
                     </div>
