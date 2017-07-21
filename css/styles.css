@@ -285,7 +285,7 @@ span.imgcaption:hover + img {
 .accordion {
     border-radius: 10px;
     width: 100%;
-    height: 350px;
+    height: 400px;
     overflow: hidden;
     margin: 50px auto;
 }
@@ -303,7 +303,7 @@ span.imgcaption:hover + img {
     vertical-align: bottom;
     position: relative;
     width: 16.666%;
-    height: 350px;
+    height: 400px;
     background-repeat: no-repeat;
     background-position: center center;
     transition: all 500ms ease;
@@ -317,7 +317,7 @@ span.imgcaption:hover + img {
 
 .accordion ul li div a {
     display: block;
-    height: 350px;
+    height: 400px;
     width: 100%;
     position: relative;
     z-index: 3;
