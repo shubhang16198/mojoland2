@@ -407,3 +407,36 @@ span.imgcaption:hover + img {
     -o-transition: opacity 0.2s ease;
     transition: opacity 0.2s ease;
 }
+
+img.galleryimg {
+    width: 33%;
+    margin: 2px;
+}
+
+.grid {
+    background: #fff;
+}
+
+/* clear fix */
+.grid:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-sizer,
+.grid-item {
+    width: 33.3333%;
+}
+
+.grid-item {
+    float: left;
+    padding: 2px;
+}
+
+.grid-item img {
+    display: block;
+    max-width: 100%;
+}
