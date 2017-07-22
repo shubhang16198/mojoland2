@@ -9,7 +9,7 @@
             <link rel="stylesheet" href="css/bootstrap.min.css">
             <link rel="stylesheet" href="css/styles.css">
             <link rel="stylesheet" href="css/fa/css/font-awesome.min.css">
-            <link href="https://fonts.googleapis.com/css?family=Raleway:500|Roboto+Condensed:700" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Raleway:500|Roboto+Condensed:700|Droid+Sans" rel="stylesheet">
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
             <script src="js/jquery.js"></script>
             <script src="js/bootstrap.min.js"></script>
@@ -187,10 +187,16 @@
                     </ul>
                 </div>
             </div>
+            <style>
+                ul#tabnav li.active a{
+                    background: gold;
+                    color: black;
+                }
+            </style>
             <div class="container">
                 <br><br>
                 <div class="row">
-                    <ul class="nav nav-tabs nav-justified">
+                    <ul id="tabnav" class="nav nav-tabs nav-justified" style="font-family: 'Raleway', sans-serif; font-size: 20px;">
                         <li class="active" id="lagoonwaterparktab"><a style="cursor: pointer;" onclick="openpark('lagoonwaterpark');">Water Park</a></li>
                         <li id="adventureparktab"><a style="cursor: pointer;" onclick="openpark('adventurepark');">Adventure Park</a></li>
                         <li id="aerosportstab"><a style="cursor: pointer;" onclick="openpark('aerosports');">Aero Sports Park</a></li>
@@ -222,7 +228,33 @@
                 <div class="row">
                     <br>
                     <h3 style="font-family: 'Roboto Condensed', sans-serif;">Rides and Attractions</h3><br>
-
+                </div>
+                <div class="park-details">
+                    <div class="row">
+                        <img src="img/lagoonwaterpark/palm%20Cropped.jpg" alt="Palm Beach" class="img-responsive">
+                        <div class="details">
+                            <span class="attractionname">Palm Beach</span><br><br>
+                            <span class="attractiontime">Operating hours : 11AM to 5PM</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <img src="img/lagoonwaterpark/wave%20pool%20Cropped.jpg" alt="Wave Pool" class="img-responsive">
+                    </div>
+                    <div class="row">
+                        <img src="img/lagoonwaterpark/slides%20Cropped.jpg" alt="Slides" class="img-responsive">
+                    </div>
+                    <div class="row">
+                        <img src="img/lagoonwaterpark/pendulum%20Cropped.jpg" alt="Pendulum" class="img-responsive">
+                    </div>
+                    <div class="row">
+                        <img src="img/lagoonwaterpark/waterfall%20Cropped.jpg" alt="Volcanic Water Fall" class="img-responsive">
+                    </div>
+                    <div class="row">
+                        <img src="img/lagoonwaterpark/rain%20dance%20Cropped.jpg" alt="Rain Dance" class="img-responsive">
+                    </div>
+                    <div class="row">
+                        <img src="img/lagoonwaterpark/foam%20shack_2%20Cropped%20(1).jpg" alt=Foam Dance"" class="img-responsive">
+                    </div>
                 </div>
             </div>
             <div class="container tabcontent" id="adventurepark">
