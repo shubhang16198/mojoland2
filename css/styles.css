@@ -454,7 +454,7 @@ img.galleryimg {
     font-size:  20px;
     position: absolute;
     z-index: 10;
-    top: 100px;
+    top: 10%;
 }
 
 .details span {
