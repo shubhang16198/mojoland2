@@ -359,13 +359,13 @@ span.imgcaption:hover + img {
     font-size: 13.5px;
 }
 
-.accordion ul li:nth-child(1) { background-image: url("../img/resized/slider/1.jpg"); }
+.accordion ul li:nth-child(1) { background-image: url("../img/resized/slider/1.jpg"); background-size: cover;}
 
-.accordion ul li:nth-child(2) { background-image: url("../img/resized/slider/2.jpg"); }
+.accordion ul li:nth-child(2) { background-image: url("../img/resized/slider/2.jpg"); background-size: cover;}
 
-.accordion ul li:nth-child(3) { background-image: url("../img/resized/slider/3.jpg"); }
+.accordion ul li:nth-child(3) { background-image: url("../img/resized/slider/3.jpg"); background-size: cover;}
 
-.accordion ul li:nth-child(4) { background-image: url("../img/resized/slider/4.jpg"); }
+.accordion ul li:nth-child(4) { background-image: url("../img/resized/slider/4.jpg"); background-size: cover;}
 
 
 .accordion ul:hover li { width: 8%; }
@@ -492,6 +492,7 @@ img.galleryimg {
     -o-transform: scale(1.1);
     transform: scale(1.1);
 }
+
 
 
 
