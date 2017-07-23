@@ -31,6 +31,16 @@
 
             </style>
             <script type="text/javascript">
+                $(document).ready(function() {
+                    var x = $(window).width() - $("#tabnav").width();
+                    x /= 2;
+                    $(".tabsfixed").css("left", x+"px");
+                });
+                $(window).resize(function() {
+                    var x = $(window).width() - $("#tabnav").width();
+                    x /= 2;
+                    $(".tabsfixed").css("left", x+"px");
+                });
                 $(window).scroll(function() {
                     var a = $("#logo").height() + $("#navigation-bar").height();
                     if($(document).scrollTop() > a) {
@@ -38,6 +48,18 @@
                     }
                     if($(document).scrollTop() < (a - 100)) {
                         $('#navigation-bar').removeClass("topfixed");
+                    }
+
+                    var x = $("#logo").height() + $("#navigation-bar").height() + $("#slidercontainer").height();
+                    if($(document).scrollTop() > x) {
+                        $('#tabscontainer').addClass("tabsfixed");
+                        var x = $(window).width() - $("#tabnav").width();
+                        x /= 2;
+                        $(".tabsfixed").css("left", x+"px");
+                        $(".tabsfixed").css("top", $("#navigation-bar").height() + "px");
+                    }
+                    if($(document).scrollTop() < (x - 100)) {
+                        $('#tabscontainer').removeClass("tabsfixed");
                     }
                 });
 

@@ -493,15 +493,9 @@ img.galleryimg {
     transform: scale(1.1);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+.tabsfixed {
+    transition: all 0.3s ease;
+    z-index: 100;
+    position: fixed;
+    background: white;
+}
