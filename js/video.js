@@ -18,10 +18,10 @@ function showfullvideo() {
     $("#mapcontainer").slideUp();
     $("#footercontainer").slideUp();
     $(".homevideo").height(window.innerHeight - 5);
-    setTimeout(function() {
+    document.getElementById("homevid").oncanplay = function() {
         x = (window.innerWidth - $(".homevideo").width()) / 2;
         $(".homevideo").css("margin-left", x+"px");
-    }, 1000);
+    };
 }
 
 $(window).resize(function() {
