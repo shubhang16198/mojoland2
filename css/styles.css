@@ -550,3 +550,27 @@ a#fullvideolink:hover {
     padding: 10px;
     border-radius: 50%;
 }
+
+nav li a {
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    border-radius: 10px 10px 0 0;
+    color: #5e5e5e;
+    font-weight: bolder;
+}
+nav li a:hover {
+    color: #2e6da4;
+    
+}
+
+ul.dropdown-menu li a {
+    border-radius: 0;
+    font-weight: bold;
+}
+.dropdown-menu li a:hover {
+    background-color : #0f0f0f;
+    color : yellow;
+}
