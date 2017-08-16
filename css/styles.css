@@ -574,3 +574,15 @@ ul.dropdown-menu li a {
     background-color : #0f0f0f;
     color : yellow;
 }
+
+@media only screen and (max-width: 600px) {
+    .details {
+        visibility: hidden;
+    }
+    #slidercontainer {
+        visibility: hidden;
+    }
+    #slidercontainer li{
+        height:0;
+    }
+}
