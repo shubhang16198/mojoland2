@@ -34,7 +34,8 @@
 .video-container .title-container {
     z-index: 10;
     position: absolute;
-    bottom: 50%;
+    bottom: 10%;
+    /*left:0;*/
     width: 100%;
     text-align: center;
     color: #fff;
