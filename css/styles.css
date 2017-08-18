@@ -593,3 +593,17 @@ ul.dropdown-menu li a {
         display: none;
     }
 }
+
+@media only screen and (max-width: 1400px) {
+    .blockHead {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #ticketwrapper {
+        display: none;
+        visibility: hidden;
+    }
+}
