@@ -607,3 +607,11 @@ ul.dropdown-menu li a {
         visibility: hidden;
     }
 }
+
+#footercontainer {
+    color: #000000;
+}
+
+#footercontainer a {
+    color: #000000;
+}
