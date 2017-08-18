@@ -36,9 +36,6 @@
 
             </style>
             <script type="text/javascript">
-                $(document).ready(function() {
-                    $("video").prop("muted", true);
-                });
                 $(window).scroll(function() {
                     var a = $("#logo").height() + $("#navigation-bar").height();
                     if($(document).scrollTop() > a) {
@@ -132,21 +129,21 @@
                     <div class="title-container">
                         <div class="headline">
                             <h3 id="fullvideotext">
-                                <a id="fullvideolink" onclick="showfullvideo();">
+                                <a id="fullvideolink" onclick="temp();">
                                     Play full video <i class="fa fa-expand" aria-hidden="true"></i>
                                 </a>
                             </h3>
                         </div>
                     </div>
-                    <div class="close-btn" style="display: none;" onclick="undofullvideo();">
+                    <div class="close-btn" style="display: none;" onclick="tempoff();">
                         <span style="cursor: pointer;"><img src="img/close.png" width="32"></span>
                     </div>
 
-                    <video id="homevid" autoplay loop preload="auto">
+                    <video id="homevid" muted autoplay loop>
                         <source src="img/videoback.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
                     </video>
 
-                    <video id="fullvideo" style="display: none;">
+                    <video id="fullvideo" muted autoplay style="display: none;">
                         <source src="img/fullvideo.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
                     </video>
                 </div>

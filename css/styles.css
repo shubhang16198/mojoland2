@@ -501,7 +501,7 @@ img.galleryimg {
     background: white;
 }
 a#fullvideolink {
-    background: transparent;
+    background: rgba(0, 0, 0, 0.3);
     border-radius: 50px;
     border: 5px solid white;
     color: white;
@@ -516,7 +516,7 @@ a#fullvideolink {
 }
 a#fullvideolink:hover {
     text-decoration: none;
-    background: rgba(0,0,0, 0.6);
+    background: rgba(0,0,0, 1);
 }
 
 @media screen and (max-width: 992px) {
