@@ -578,12 +578,18 @@ ul.dropdown-menu li a {
 
 @media only screen and (max-width: 600px) {
     .details {
-        visibility: hidden;
+        display: none;
     }
     #slidercontainer {
-        visibility: hidden;
+        display: none;
     }
     #slidercontainer li{
         height:0;
+    }
+}
+
+@media print {
+    video::-webkit-media-controls {
+        display: none;
     }
 }
