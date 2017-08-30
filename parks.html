@@ -29,6 +29,13 @@
                     width:70%;
                 }
 
+                @media only screen 
+                and (max-width: 700px) {
+                    .container {
+                        width: 100% !important;
+                    }
+                }
+
             </style>
             <script type="text/javascript">
                 $(document).ready(function() {
@@ -50,9 +57,12 @@
                         $('#navigation-bar').removeClass("topfixed");
                     }
 
-                    var x = $("#logo").height() + $("#navigation-bar").height() + $("#slidercontainer").height();
+                    var x = $("#logo").height() + $("#navigation-bar").height();
+                    if ($("#slidercontainer").css("display") != "none")
+                        x += $("#slidercontainer").height();
                     if($(document).scrollTop() > x) {
                         $('#tabscontainer').addClass("tabsfixed");
+                        $('#tabscontainer').removeClass("container");
                         var x = $(window).width() - $("#tabnav").width();
                         x /= 2;
                         $(".tabsfixed").css("left", x+"px");
@@ -60,6 +70,7 @@
                     }
                     if($(document).scrollTop() < (x - 100)) {
                         $('#tabscontainer').removeClass("tabsfixed");
+                        $('#tabscontainer').addClass("container");
                     }
                 });
 
@@ -173,7 +184,7 @@
                     </div>
                 </div>
             </nav>
-            <div class="container" id="slidercontainer">
+            <div class="container" id="slidercontainer" >
                 <div class="accordion">
                     <ul>
                         <li>
@@ -206,27 +217,33 @@
                     color: black;
                 }
             </style>
-            <div class="container" id="tabscontainer">
+            <div class="container" id="tabscontainer" style="width: 100%;">
                 <br><br>
                 <div class="row">
-                    <ul id="tabnav" class="nav nav-tabs nav-justified" style="font-family: 'Raleway', sans-serif; font-size: 20px;">
-                        <li class="active" id="lagoonwaterparktab"><a style="cursor: pointer;" onclick="openpark('lagoonwaterpark');">Water Park</a></li>
-                        <li id="adventureparktab"><a style="cursor: pointer;" onclick="openpark('adventurepark');">Adventure Park</a></li>
-                        <li id="aerosportstab"><a style="cursor: pointer;" onclick="openpark('aerosports');">Aero Sports Park</a></li>
-                    </ul>
+                    <div class="col-sm-12">
+                        <ul id="tabnav" class="nav nav-tabs nav-justified" style="font-family: 'Raleway', sans-serif; font-size: 20px;">
+                            <li class="active" id="lagoonwaterparktab"><a style="cursor: pointer;" onclick="openpark('lagoonwaterpark');">Water Park</a></li>
+                            <li id="adventureparktab"><a style="cursor: pointer;" onclick="openpark('adventurepark');">Adventure Park</a></li>
+                            <li id="aerosportstab"><a style="cursor: pointer;" onclick="openpark('aerosports');">Aero Sports Park</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="container tabcontent" id="lagoonwaterpark">
                 <div class="row">
                     <div>
-                        <h1 style="font-family: 'Roboto Condensed', sans-serif;">Lagoon Water Park</h1>
+                        <div class="col-sm-12">
+                            <h1 style="font-family: 'Roboto Condensed', sans-serif;">Lagoon Water Park</h1>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-9 col-lg-9" style="padding-right: 30px;">
                         <div class="row" style="font-family: 'Raleway', sans-serif;">
-                            <h3 style="color: gray;">Explore the amazing Water Park!</h3>
-                            <h4>The ideal escape to calm countryside from the pressures of a busy life.</h4>
+                            <div class="col-sm-12">
+                                <h3 style="color: gray;">Explore the amazing Water Park!</h3>
+                                <h4>The ideal escape to calm countryside from the pressures of a busy life.</h4>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-3 col-lg-3">
@@ -240,7 +257,9 @@
                 </div>
                 <div class="row">
                     <br>
-                    <h3 style="font-family: 'Roboto Condensed', sans-serif;">Rides and Attractions</h3><br>
+                    <div class="col-sm-12">
+                        <h3 style="font-family: 'Roboto Condensed', sans-serif;">Rides and Attractions</h3><br>
+                    </div>
                 </div>
                 <div class="park-details">
                     <div class="row">
@@ -306,15 +325,17 @@
             </div>
             <div class="container tabcontent" id="adventurepark">
                 <div class="row">
-                    <div>
+                    <div class="col-sm-12">
                         <h1 style="font-family: 'Roboto Condensed', sans-serif;">Adventura Adventure Park</h1>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-9 col-lg-9">
                         <div class="row"  style="font-family: 'Raleway', sans-serif;">
-                            <h3 style="color: gray;">Explore the amazing Adventure Park!</h3>
-                            <h4>The ideal escape to calm countryside from the pressures of a busy life.</h4>
+                            <div class="col-sm-12">
+                                <h3 style="color: gray;">Explore the amazing Adventure Park!</h3>
+                                <h4>The ideal escape to calm countryside from the pressures of a busy life.</h4>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-3 col-lg-3">
@@ -332,7 +353,9 @@
                 </div>
                 <div class="row">
                     <br>
-                    <h3 style="font-family: 'Roboto Condensed', sans-serif;">Rides and Attractions</h3><br>
+                    <div class="col-sm-12">
+                        <h3 style="font-family: 'Roboto Condensed', sans-serif;">Rides and Attractions</h3><br>
+                    </div>
                 </div>
                 <div class="park-details">
                     <div class="row">
@@ -396,14 +419,18 @@
             <div class="container tabcontent" id="aerosports">
                 <div class="row">
                     <div>
-                        <h1 style="font-family: 'Roboto Condensed', sans-serif;">Aero Sports Park</h1>
+                        <div class="col-sm-12">
+                            <h1 style="font-family: 'Roboto Condensed', sans-serif;">Aero Sports Park</h1>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-9 col-lg-9">
                         <div class="row" style="font-family: 'Raleway', sans-serif;">
-                            <h3 style="color: gray;">Explore the amazing Aero Sports Park!</h3>
-                            <h4>The ideal escape to calm countryside from the pressures of a busy life.</h4>
+                            <div class="col-sm-12">
+                                <h3 style="color: gray;">Explore the amazing Aero Sports Park!</h3>
+                                <h4>The ideal escape to calm countryside from the pressures of a busy life.</h4>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-3 col-lg-3">
@@ -417,7 +444,9 @@
                 </div>
                 <div class="row">
                     <br>
-                    <h3 style="font-family: 'Roboto Condensed', sans-serif;">Attractions</h3><br>
+                    <div class="col-sm-12">
+                        <h3 style="font-family: 'Roboto Condensed', sans-serif;">Attractions</h3><br>
+                    </div>
                 </div>
                 <div class="park-details">
                     <div class="row">
@@ -436,7 +465,8 @@
             </div>
             <div class="container" id="footercontainer">
                 <div class="row">
-                    <div class="col-md-3 col-lg-3">
+                    <br><br>
+                    <div class="col-md-3 col-lg-3 col-sm-6 col-xs-6">
                         <h4><a href="parks.html#lagoonwaterpark">Lagoon Water Park</a></h4>
                         <small>
                             Palm Beach <br>
@@ -450,7 +480,7 @@
                             The Beach Shack Cafe <br>
                         </small>
                     </div>
-                    <div class="col-md-3 col-lg-3">
+                    <div class="col-md-3 col-lg-3 col-sm-6 col-xs-6">
                         <h4><a href="parks.html#adventurepark">Adventura Adventure Park</a></h4>
                         <small>
                             ATV Track <br>
@@ -465,14 +495,14 @@
                             Sky Cycling (coming soon) <br>
                         </small>
                     </div>
-                    <div class="col-md-3 col-lg-3">
+                    <div class="col-md-3 col-lg-3 col-sm-6 col-xs-6">
                         <h4><a href="parks.html#aerosports">Aero Sports</a></h4>
                         <small>
                             Paramotoring <br>
                             Parasailing <br>
                         </small>
                     </div>
-                    <div class="col-md-3 col-lg-3">
+                    <div class="col-md-3 col-lg-3 col-sm-6 col-xs-6">
                         <h4>More Links</h4>
                         <small>
                             
