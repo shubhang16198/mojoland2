@@ -615,3 +615,11 @@ ul.dropdown-menu li a {
 #footercontainer a {
     color: #000000;
 }
+
+@media only screen 
+and (max-device-width: 500px)
+and (-webkit-min-device-pixel-ratio : 2) {
+    .container {
+        width: 100% !important;
+    }
+}
