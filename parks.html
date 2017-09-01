@@ -58,7 +58,11 @@
                     }
 
                     //var x = $("#logo").height() + $("#navigation-bar").height();
-                    var x = $("#content-wrapper").offset().top;
+                    var x;
+                    if ($("#slidercontainer").css("display") != "none")
+                        x = $("#logo").height() + $("#navigation-bar").height() + $("#slidercontainer").height();
+                    else
+                        x = a;
                     //if ($("#slidercontainer").css("display") != "none")
                         //x += $("#slidercontainer").height();
                     if($(document).scrollTop() > x) {
