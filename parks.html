@@ -57,9 +57,10 @@
                         $('#navigation-bar').removeClass("topfixed");
                     }
 
-                    var x = $("#logo").height() + $("#navigation-bar").height();
-                    if ($("#slidercontainer").css("display") != "none")
-                        x += $("#slidercontainer").height();
+                    //var x = $("#logo").height() + $("#navigation-bar").height();
+                    var x = $("#content-wrapper").offset().top;
+                    //if ($("#slidercontainer").css("display") != "none")
+                        //x += $("#slidercontainer").height();
                     if($(document).scrollTop() > x) {
                         $('#tabscontainer').addClass("tabsfixed");
                         $('#tabscontainer').removeClass("container");
@@ -229,236 +230,238 @@
                     </div>
                 </div>
             </div>
-            <div class="container tabcontent" id="lagoonwaterpark">
-                <div class="row">
-                    <div>
+            <div id="content-wrapper">
+                <div class="container tabcontent" id="lagoonwaterpark">
+                    <div class="row">
+                        <div>
+                            <div class="col-sm-12">
+                                <h1 style="font-family: 'Roboto Condensed', sans-serif;">Lagoon Water Park</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-9 col-lg-9" style="padding-right: 30px;">
+                            <div class="row" style="font-family: 'Raleway', sans-serif;">
+                                <div class="col-sm-12">
+                                    <h3 style="color: gray;">Explore the amazing Water Park!</h3>
+                                    <h4>The ideal escape to calm countryside from the pressures of a busy life.</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-lg-3">
+                            <div class="row" style="background-color: #E5E5FF; border-radius: 10px; padding: 20px;">
+                                <div class="col-md-12 col-lg-12">
+                                    <h4><strong>Hours <i class="fa fa-clock-o" aria-hidden="true"></i></strong></h4>
+                                    <h5 style="color: #555;">11:00 AM to 09:00 PM</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <br>
                         <div class="col-sm-12">
-                            <h1 style="font-family: 'Roboto Condensed', sans-serif;">Lagoon Water Park</h1>
+                            <h3 style="font-family: 'Roboto Condensed', sans-serif;">Rides and Attractions</h3><br>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-9 col-lg-9" style="padding-right: 30px;">
-                        <div class="row" style="font-family: 'Raleway', sans-serif;">
-                            <div class="col-sm-12">
-                                <h3 style="color: gray;">Explore the amazing Water Park!</h3>
-                                <h4>The ideal escape to calm countryside from the pressures of a busy life.</h4>
+                    <div class="park-details">
+                        <div class="row">
+                            <img src="img/resized/lagoon/palmbeach.jpg" alt="Palm Beach" class="img-responsive">
+                            <div class="details">
+                                <span class="attractionname">Palm Beach</span><br><br>
+                                <span class="attractiontime">11:00 am to 05:00 pm</span>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-3 col-lg-3">
-                        <div class="row" style="background-color: #E5E5FF; border-radius: 10px; padding: 20px;">
-                            <div class="col-md-12 col-lg-12">
-                                <h4><strong>Hours <i class="fa fa-clock-o" aria-hidden="true"></i></strong></h4>
-                                <h5 style="color: #555;">11:00 AM to 09:00 PM</h5>
+                        <div class="row">
+                            <img src="img/resized/lagoon/wavepool.jpg" alt="Wave Pool" class="img-responsive">
+                            <div class="details">
+                                <span class="attractionname">Wave Pool</span><br><br>
+                                <span class="attractiontime">12:00 pm to 12:15 pm</span><br><br>
+                                <span class="attractiontime">02:30 pm to 02:45 pm</span><br><br><span class="attractiontime">05:00 pm to 05:15 pm</span>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <br>
-                    <div class="col-sm-12">
-                        <h3 style="font-family: 'Roboto Condensed', sans-serif;">Rides and Attractions</h3><br>
-                    </div>
-                </div>
-                <div class="park-details">
-                    <div class="row">
-                        <img src="img/resized/lagoon/palmbeach.jpg" alt="Palm Beach" class="img-responsive">
-                        <div class="details">
-                            <span class="attractionname">Palm Beach</span><br><br>
-                            <span class="attractiontime">11:00 am to 05:00 pm</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <img src="img/resized/lagoon/wavepool.jpg" alt="Wave Pool" class="img-responsive">
-                        <div class="details">
-                            <span class="attractionname">Wave Pool</span><br><br>
-                            <span class="attractiontime">12:00 pm to 12:15 pm</span><br><br>
-                            <span class="attractiontime">02:30 pm to 02:45 pm</span><br><br><span class="attractiontime">05:00 pm to 05:15 pm</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <img src="img/resized/lagoon/slides.jpg" alt="Slides" class="img-responsive">
-                        <div class="details">
-                            <span class="attractionname">Slides</span><br><br>
-                            <span class="attractiontime">11:00 am to 09:00 pm</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <img src="img/resized/lagoon/pendulum.jpg" alt="Pendulum" class="img-responsive">
-                        <div class="details">
-                            <span class="attractionname">Pendulum</span><br><br>
-                            <span class="attractiontime">11:00 am to 09:00 pm</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <img src="img/resized/lagoon/waterfall.jpg" alt="Volcanic Water Fall" class="img-responsive">
-                        <div class="details">
-                            <span class="attractionname">Volcanic Water Fall</span><br><br>
-                            <span class="attractiontime">12:45 pm to 01:00 pm</span><br><br>
-                            <span class="attractiontime">03:15 pm to 03:30 pm</span><br><br><span class="attractiontime">05:45 pm to 06:00 pm</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <img src="img/resized/lagoon/raindance.jpg" alt="Rain Dance" class="img-responsive">
-                        <div class="details">
-                            <span class="attractionname">Rain Dance</span><br><br>
-                            <span class="attractiontime">12:30 pm to 12:45 pm</span><br><br>
-                            <span class="attractiontime">03:00 pm to 03:15 pm</span><br><br><span class="attractiontime">05:30 pm to 05:45 pm</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <img src="img/resized/lagoon/foamdance.jpg" alt=Foam Dance"" class="img-responsive">
-                        <div class="details">
-                            <span class="attractionname">Foam Dance</span><br><br>
-                            <span class="attractiontime">12:15 pm to 12:30 pm</span><br><br>
-                            <span class="attractiontime">02:45 pm to 03:00 pm</span><br><br><span class="attractiontime">05:15 pm to 05:30 pm</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <img src="img/resized/lagoon/beachshack.jpg" alt="Beach Shack Cafe" class="img-responsive" width="100%">
-                        <div class="details">
-                            <span class="attractionname">Beach Shack Cafe</span><br><br>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container tabcontent" id="adventurepark">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <h1 style="font-family: 'Roboto Condensed', sans-serif;">Adventura Adventure Park</h1>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-9 col-lg-9">
-                        <div class="row"  style="font-family: 'Raleway', sans-serif;">
-                            <div class="col-sm-12">
-                                <h3 style="color: gray;">Explore the amazing Adventure Park!</h3>
-                                <h4>The ideal escape to calm countryside from the pressures of a busy life.</h4>
+                        <div class="row">
+                            <img src="img/resized/lagoon/slides.jpg" alt="Slides" class="img-responsive">
+                            <div class="details">
+                                <span class="attractionname">Slides</span><br><br>
+                                <span class="attractiontime">11:00 am to 09:00 pm</span>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-3 col-lg-3">
-                        <div class="row" style="background-color: #E5E5FF; border-radius: 10px; padding: 20px;">
-                            <div class="col-md-12 col-lg-12">
-                                <h4><strong>Hours <i class="fa fa-clock-o" aria-hidden="true"></i></strong></h4>
-                                <h5 style="color: #555;">11:00 AM to 06:00 PM</h5>
-                                <strong>Prices </strong><br>
-                                <small>Adults : Rs. 500</small>
-                                <br>
-                                <small>Children/Sr. Citizen : Rs. 400</small>
+                        <div class="row">
+                            <img src="img/resized/lagoon/pendulum.jpg" alt="Pendulum" class="img-responsive">
+                            <div class="details">
+                                <span class="attractionname">Pendulum</span><br><br>
+                                <span class="attractiontime">11:00 am to 09:00 pm</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <img src="img/resized/lagoon/waterfall.jpg" alt="Volcanic Water Fall" class="img-responsive">
+                            <div class="details">
+                                <span class="attractionname">Volcanic Water Fall</span><br><br>
+                                <span class="attractiontime">12:45 pm to 01:00 pm</span><br><br>
+                                <span class="attractiontime">03:15 pm to 03:30 pm</span><br><br><span class="attractiontime">05:45 pm to 06:00 pm</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <img src="img/resized/lagoon/raindance.jpg" alt="Rain Dance" class="img-responsive">
+                            <div class="details">
+                                <span class="attractionname">Rain Dance</span><br><br>
+                                <span class="attractiontime">12:30 pm to 12:45 pm</span><br><br>
+                                <span class="attractiontime">03:00 pm to 03:15 pm</span><br><br><span class="attractiontime">05:30 pm to 05:45 pm</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <img src="img/resized/lagoon/foamdance.jpg" alt=Foam Dance"" class="img-responsive">
+                            <div class="details">
+                                <span class="attractionname">Foam Dance</span><br><br>
+                                <span class="attractiontime">12:15 pm to 12:30 pm</span><br><br>
+                                <span class="attractiontime">02:45 pm to 03:00 pm</span><br><br><span class="attractiontime">05:15 pm to 05:30 pm</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <img src="img/resized/lagoon/beachshack.jpg" alt="Beach Shack Cafe" class="img-responsive" width="100%">
+                            <div class="details">
+                                <span class="attractionname">Beach Shack Cafe</span><br><br>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <br>
-                    <div class="col-sm-12">
-                        <h3 style="font-family: 'Roboto Condensed', sans-serif;">Rides and Attractions</h3><br>
-                    </div>
-                </div>
-                <div class="park-details">
+                <div class="container tabcontent" id="adventurepark">
                     <div class="row">
-                        <img src="img/resized/adventura/ATV.jpg" alt="ATV" class="img-responsive">
-                        <div class="details">
-                            <span class="attractionname">ATV</span><br><br>
-                            <span class="attractiontime">Kids : Rs. 300 (2 laps)</span><br><br>
-                            <span class="attractiontime">Adults : Rs. 400 (2 laps)</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <img src="img/resized/adventura/bungeeejection.jpg" alt="Bungee Ejection" class="img-responsive" width="100%">
-                        <div class="details">
-                            <span class="attractionname">Bungee Ejection</span><br><br>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <img src="img/resized/adventura/freefall.jpg" alt="Free Fall" class="img-responsive" width="100%">
-                        <div class="details">
-                            <span class="attractionname">Free Fall</span><br><br>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <img src="img/resized/adventura/ziplining.jpg" alt="Zip Lining" class="img-responsive" width="100%">
-                        <div class="details">
-                            <span class="attractionname">Zip Lining</span><br><br>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <img src="img/resized/adventura/rockclimbing.jpg" alt="Rock Climbing" class="img-responsive" width="100%">
-                        <div class="details">
-                            <span class="attractionname">Rock Climbing</span><br><br>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <img src="img/resized/adventura/highrope.jpg" alt="High Rope" class="img-responsive" width="100%">
-                        <div class="details">
-                            <span class="attractionname">High Rope</span><br><br>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <img src="img/resized/adventura/lowrope.jpg" alt="Low Rope" class="img-responsive" width="100%">
-                        <div class="details">
-                            <span class="attractionname">Low Rope</span><br><br>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <img src="img/resized/adventura/archery.jpg" alt="Low Rope" class="img-responsive" width="100%">
-                        <div class="details">
-                            <span class="attractionname">Archery</span><br><br>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <img src="img/resized/adventura/shooting.jpg" alt="Low Rope" class="img-responsive" width="100%">
-                        <div class="details">
-                            <span class="attractionname">Shooting</span><br><br>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container tabcontent" id="aerosports">
-                <div class="row">
-                    <div>
                         <div class="col-sm-12">
-                            <h1 style="font-family: 'Roboto Condensed', sans-serif;">Aero Sports Park</h1>
+                            <h1 style="font-family: 'Roboto Condensed', sans-serif;">Adventura Adventure Park</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-9 col-lg-9">
+                            <div class="row"  style="font-family: 'Raleway', sans-serif;">
+                                <div class="col-sm-12">
+                                    <h3 style="color: gray;">Explore the amazing Adventure Park!</h3>
+                                    <h4>The ideal escape to calm countryside from the pressures of a busy life.</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-lg-3">
+                            <div class="row" style="background-color: #E5E5FF; border-radius: 10px; padding: 20px;">
+                                <div class="col-md-12 col-lg-12">
+                                    <h4><strong>Hours <i class="fa fa-clock-o" aria-hidden="true"></i></strong></h4>
+                                    <h5 style="color: #555;">11:00 AM to 06:00 PM</h5>
+                                    <strong>Prices </strong><br>
+                                    <small>Adults : Rs. 500</small>
+                                    <br>
+                                    <small>Children/Sr. Citizen : Rs. 400</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <br>
+                        <div class="col-sm-12">
+                            <h3 style="font-family: 'Roboto Condensed', sans-serif;">Rides and Attractions</h3><br>
+                        </div>
+                    </div>
+                    <div class="park-details">
+                        <div class="row">
+                            <img src="img/resized/adventura/ATV.jpg" alt="ATV" class="img-responsive">
+                            <div class="details">
+                                <span class="attractionname">ATV</span><br><br>
+                                <span class="attractiontime">Kids : Rs. 300 (2 laps)</span><br><br>
+                                <span class="attractiontime">Adults : Rs. 400 (2 laps)</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <img src="img/resized/adventura/bungeeejection.jpg" alt="Bungee Ejection" class="img-responsive" width="100%">
+                            <div class="details">
+                                <span class="attractionname">Bungee Ejection</span><br><br>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <img src="img/resized/adventura/freefall.jpg" alt="Free Fall" class="img-responsive" width="100%">
+                            <div class="details">
+                                <span class="attractionname">Free Fall</span><br><br>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <img src="img/resized/adventura/ziplining.jpg" alt="Zip Lining" class="img-responsive" width="100%">
+                            <div class="details">
+                                <span class="attractionname">Zip Lining</span><br><br>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <img src="img/resized/adventura/rockclimbing.jpg" alt="Rock Climbing" class="img-responsive" width="100%">
+                            <div class="details">
+                                <span class="attractionname">Rock Climbing</span><br><br>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <img src="img/resized/adventura/highrope.jpg" alt="High Rope" class="img-responsive" width="100%">
+                            <div class="details">
+                                <span class="attractionname">High Rope</span><br><br>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <img src="img/resized/adventura/lowrope.jpg" alt="Low Rope" class="img-responsive" width="100%">
+                            <div class="details">
+                                <span class="attractionname">Low Rope</span><br><br>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <img src="img/resized/adventura/archery.jpg" alt="Low Rope" class="img-responsive" width="100%">
+                            <div class="details">
+                                <span class="attractionname">Archery</span><br><br>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <img src="img/resized/adventura/shooting.jpg" alt="Low Rope" class="img-responsive" width="100%">
+                            <div class="details">
+                                <span class="attractionname">Shooting</span><br><br>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-9 col-lg-9">
-                        <div class="row" style="font-family: 'Raleway', sans-serif;">
+                <div class="container tabcontent" id="aerosports">
+                    <div class="row">
+                        <div>
                             <div class="col-sm-12">
-                                <h3 style="color: gray;">Explore the amazing Aero Sports Park!</h3>
-                                <h4>The ideal escape to calm countryside from the pressures of a busy life.</h4>
+                                <h1 style="font-family: 'Roboto Condensed', sans-serif;">Aero Sports Park</h1>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 col-lg-3">
-                        <div class="row" style="background-color: #E5E5FF; border-radius: 10px; padding: 20px;">
-                            <div class="col-md-12 col-lg-12">
-                                <h4><strong>Hours <i class="fa fa-clock-o" aria-hidden="true"></i></strong></h4>
-                                <h5 style="color: #555;">11:00 AM to 06:00 PM</h5>
+                    <div class="row">
+                        <div class="col-md-9 col-lg-9">
+                            <div class="row" style="font-family: 'Raleway', sans-serif;">
+                                <div class="col-sm-12">
+                                    <h3 style="color: gray;">Explore the amazing Aero Sports Park!</h3>
+                                    <h4>The ideal escape to calm countryside from the pressures of a busy life.</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-lg-3">
+                            <div class="row" style="background-color: #E5E5FF; border-radius: 10px; padding: 20px;">
+                                <div class="col-md-12 col-lg-12">
+                                    <h4><strong>Hours <i class="fa fa-clock-o" aria-hidden="true"></i></strong></h4>
+                                    <h5 style="color: #555;">11:00 AM to 06:00 PM</h5>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <br>
-                    <div class="col-sm-12">
-                        <h3 style="font-family: 'Roboto Condensed', sans-serif;">Attractions</h3><br>
-                    </div>
-                </div>
-                <div class="park-details">
                     <div class="row">
-                        <img src="img/resized/Aero/paramotoring.jpg" alt="Para Motoring" class="img-responsive" width="100%">
-                        <div class="details">
-                            <span class="attractionname">Para-Motoring</span>
+                        <br>
+                        <div class="col-sm-12">
+                            <h3 style="font-family: 'Roboto Condensed', sans-serif;">Attractions</h3><br>
                         </div>
                     </div>
-                    <div class="row">
-                        <img src="img/resized/Aero/parasailing.jpg" alt="Para Sailing" class="img-responsive" width="100%">
-                        <div class="details">
-                            <span class="attractionname">Para-Sailing</span>
+                    <div class="park-details">
+                        <div class="row">
+                            <img src="img/resized/Aero/paramotoring.jpg" alt="Para Motoring" class="img-responsive" width="100%">
+                            <div class="details">
+                                <span class="attractionname">Para-Motoring</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <img src="img/resized/Aero/parasailing.jpg" alt="Para Sailing" class="img-responsive" width="100%">
+                            <div class="details">
+                                <span class="attractionname">Para-Sailing</span>
+                            </div>
                         </div>
                     </div>
                 </div>
