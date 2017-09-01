@@ -1,11 +1,9 @@
-[17:41, 7/28/2017] Chaitanya: 1. The menu (Gallery, Parks link) looks very raw and basic. Can we have something which is a little more dynamic and attractive?
-
-3. The background (white) looks a little blank, especially on the top, on the sides of the logo. We should incorporate some minimalistic and simplistic graphic for background.
-
-4. The fonts need to be changed at various places, like terms and conditions page and menu.   
-
-
-Add Fun Pool
-
-Add shooting
-Add archery
+1. Contact Us page 
+2. Book tickets separate page
+3. 3 tabs instead of 4 on the landing page and the parks page
+4. Images on the parks page in the responsive version need to be improved in terms of size and alignment
+5. Play full video button goes to the corner of the video
+6. The animation on scrolling down, by which the images etc appear, is a little slow. Makes it feel like the website is stuck for a second
+7. In the responsive version, since the video has to be voluntarily played, the black part doesn't look good in the meanwhile. We should add some image in the background
+8. Should the animation of the tabs in the responsive version  on the landing page by which the text appears not be automatic?
+Otherwise the it's existence can't be conceived.
