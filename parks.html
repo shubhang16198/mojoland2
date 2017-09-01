@@ -62,7 +62,7 @@
                     if ($("#slidercontainer").css("display") != "none")
                         x = $("#logo").height() + $("#navigation-bar").height() + $("#slidercontainer").height();
                     else
-                        x = a;
+                        x = $(".ridesandattractions").offset().top;
                     //if ($("#slidercontainer").css("display") != "none")
                         //x += $("#slidercontainer").height();
                     if($(document).scrollTop() > x) {
@@ -110,8 +110,13 @@
                     $("#lagoonwaterparktab").removeClass("active");
                     $("#adventureparktab").removeClass("active");
                     $("#aerosportstab").removeClass("active");
-                    id = "#"+parkname+"tab";
+                    id = "#" + parkname + "tab";
                     $(id).addClass("active");
+                    id = "#" + parkname + "attractions";
+                    $("#lagoonwaterparkattractions").removeClass("ridesandattractions");
+                    $("#adventureparkattractions").removeClass("ridesandattractions");
+                    $("#aerosportsattractions").removeClass("ridesandattractions");
+                    $(id).addClass("ridesandattractions");
                 }
 
                 $(document).ready(function() {
@@ -263,7 +268,7 @@
                     </div>
                     <div class="row">
                         <br>
-                        <div class="col-sm-12">
+                        <div class="col-sm-12 ridesandattractions" id="lagoonwaterparkattractions">
                             <h3 style="font-family: 'Roboto Condensed', sans-serif;">Rides and Attractions</h3><br>
                         </div>
                     </div>
@@ -359,7 +364,7 @@
                     </div>
                     <div class="row">
                         <br>
-                        <div class="col-sm-12">
+                        <div class="col-sm-12" id="adventureparkattractions">
                             <h3 style="font-family: 'Roboto Condensed', sans-serif;">Rides and Attractions</h3><br>
                         </div>
                     </div>
@@ -450,7 +455,7 @@
                     </div>
                     <div class="row">
                         <br>
-                        <div class="col-sm-12">
+                        <div class="col-sm-12" id="aerosportsattractions">
                             <h3 style="font-family: 'Roboto Condensed', sans-serif;">Attractions</h3><br>
                         </div>
                     </div>
