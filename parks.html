@@ -57,25 +57,20 @@
                         $('#navigation-bar').removeClass("topfixed");
                     }
 
-                    //var x = $("#logo").height() + $("#navigation-bar").height();
-                    var x;
-                    if ($("#slidercontainer").css("display") != "none")
-                        x = $("#logo").height() + $("#navigation-bar").height() + $("#slidercontainer").height();
-                    else
-                        x = $(".ridesandattractions").offset().top;
-                    //if ($("#slidercontainer").css("display") != "none")
-                        //x += $("#slidercontainer").height();
-                    if($(document).scrollTop() > x) {
-                        $('#tabscontainer').addClass("tabsfixed");
-                        $('#tabscontainer').removeClass("container");
-                        var x = $(window).width() - $("#tabnav").width();
-                        x /= 2;
-                        $(".tabsfixed").css("left", x+"px");
-                        $(".tabsfixed").css("top", $("#navigation-bar").height() + "px");
-                    }
-                    if($(document).scrollTop() < (x - 100)) {
-                        $('#tabscontainer').removeClass("tabsfixed");
-                        $('#tabscontainer').addClass("container");
+                    if ($("#slidercontainer").css("display") != "none") {
+                        var x = $("#logo").height() + $("#navigation-bar").height() + $("#slidercontainer").height();
+                        if($(document).scrollTop() > x) {
+                            $('#tabscontainer').addClass("tabsfixed");
+                            $('#tabscontainer').removeClass("container");
+                            var x = $(window).width() - $("#tabnav").width();
+                            x /= 2;
+                            $(".tabsfixed").css("left", x+"px");
+                            $(".tabsfixed").css("top", $("#navigation-bar").height() + "px");
+                        }
+                        if($(document).scrollTop() < (x - 100)) {
+                            $('#tabscontainer').removeClass("tabsfixed");
+                            $('#tabscontainer').addClass("container");
+                        }
                     }
                 });
 

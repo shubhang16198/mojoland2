@@ -45,3 +45,4 @@ $(window).resize(function() {
     x = (window.innerWidth - $("#fullvideo").width()) / 2;
     $("#fullvideo").css("margin-left", x+"px");
 });
+

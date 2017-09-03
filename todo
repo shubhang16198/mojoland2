@@ -7,3 +7,9 @@
 7. In the responsive version, since the video has to be voluntarily played, the black part doesn't look good in the meanwhile. We should add some image in the background
 8. Should the animation of the tabs in the responsive version  on the landing page by which the text appears not be automatic?
 Otherwise the it's existence can't be conceived.
+
+-Slow animation when images at home page are clicked
+-remove the navbar in parks page while scrolling down
+-put the names of attractions (timings/price only if can be fit in same line)
+-extra links at bottom layout is different for (home page, parks page) and (gallery, terms page), keep one for all
+-gallery should have one column rather than 3
