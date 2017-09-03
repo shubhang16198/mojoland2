@@ -374,8 +374,6 @@ span.imgcaption:hover + img {
 
 .accordion ul li:nth-child(3) { background-image: url("../img/resized/slider/3.jpg"); background-size: cover;}
 
-.accordion ul li:nth-child(4) { background-image: url("../img/resized/slider/4.jpg"); background-size: cover;}
-
 
 .accordion ul:hover li { width: 8%; }
 
@@ -603,10 +601,11 @@ ul.dropdown-menu li a {
 
 @media only screen and (max-width: 950px) {
     .details {
-        font-size: 10px !important;
+        font-size: 13px !important;
     }
     .details span {
         padding: 5px;
+        border-radius: 5px;
     }
 }
 
