@@ -453,6 +453,11 @@ img.galleryimg {
     margin: 20px 0;
     position: relative;
     overflow: hidden;
+    -webkit-transition : all 0.3s ease;
+    -moz-transition : all 0.3s ease;
+    -ms-transition : all 0.3s ease;
+    -o-transition : all 0.3s ease;
+    transition : all 0.3s ease;
 }
 
 .park-details .row div.details {
@@ -594,6 +599,7 @@ ul.dropdown-menu li a {
     #slidercontainer li{
         height:0;
     }
+
 }
 
 @media only screen and (max-width: 450px) {
@@ -609,6 +615,9 @@ ul.dropdown-menu li a {
     .details span {
         padding: 5px;
         border-radius: 5px;
+    }
+    .park-details .row {
+        margin: 2px;
     }
 }
 
@@ -641,8 +650,21 @@ ul.dropdown-menu li a {
 }
 
 @media only screen 
-and (max-width: 500px) {
+and (max-width: 800px) {
     .container {
         width: 100% !important;
     }
+}
+
+#contact-form-wrapper {
+    position: absolute;
+    bottom: -100px;
+    height: 50%;
+    width: 100%;
+}
+
+#contact-form {
+    background: white;
+    width: 60%;
+    height: 100%;
 }
