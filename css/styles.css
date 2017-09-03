@@ -370,9 +370,9 @@ span.imgcaption:hover + img {
 
 .accordion ul li:nth-child(1) { background-image: url("../img/resized/slider/1.jpg"); background-size: cover;}
 
-.accordion ul li:nth-child(2) { background-image: url("../img/resized/slider/2.jpg"); background-size: cover;}
+.accordion ul li:nth-child(2) { background-image: url("../img/resized/adventura/freefall.jpg"); background-size: cover;}
 
-.accordion ul li:nth-child(3) { background-image: url("../img/resized/slider/3.jpg"); background-size: cover;}
+.accordion ul li:nth-child(3) { background-image: url("../img/resized/Aero/paramotoring.jpg"); background-size: cover;}
 
 
 .accordion ul:hover li { width: 8%; }
@@ -588,14 +588,17 @@ ul.dropdown-menu li a {
 }
 
 @media only screen and (max-width: 700px) {
-    .details {
-        display: none;
-    }
     #slidercontainer {
         display: none;
     }
     #slidercontainer li{
         height:0;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .details {
+        display: none;
     }
 }
 
