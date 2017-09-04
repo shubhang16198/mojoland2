@@ -442,6 +442,7 @@ img.galleryimg {
     padding: 2px;
 }
 
+
 .grid-item img {
     display: block;
     max-width: 100%;
@@ -450,6 +451,7 @@ img.galleryimg {
 
 
 .park-details .row {
+    
     margin: 20px 0;
     position: relative;
     overflow: hidden;
@@ -602,11 +604,7 @@ ul.dropdown-menu li a {
 
 }
 
-@media only screen and (max-width: 450px) {
-    .details {
-        display: none;
-    }
-}
+
 
 @media only screen and (max-width: 950px) {
     .details {
@@ -641,6 +639,8 @@ ul.dropdown-menu li a {
     }
 }
 
+@media only screen and ()
+
 #footercontainer {
     color: #000000;
 }
@@ -668,3 +668,42 @@ and (max-width: 800px) {
     width: 60%;
     height: 100%;
 }
+
+
+@media only screen and (max-width: 420px) {
+    .park-details .row {
+        height: 300px;
+    }
+    .park-details .row img {
+        height: 100%;
+        -webkit-transform: scale(2.4, 1);
+        -moz-transform: scale(2.4, 1);
+        -ms-transform: scale(2.4, 1);
+        -o-transform: scale(2.4, 1);
+        transform: scale(2.4, 1);
+    }
+    .park-details .row:hover img {
+        -webkit-transform: scale(2.4, 1);
+        -moz-transform: scale(2.4, 1);
+        -ms-transform: scale(2.4, 1);
+        -o-transform: scale(2.4, 1);
+        transform: scale(2.4, 1);
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
