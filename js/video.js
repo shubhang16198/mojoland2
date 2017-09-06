@@ -18,7 +18,7 @@ function temp() {
     x = (window.innerWidth - $("#fullvideo").width()) / 2;
     $("#fullvideo").css("margin-left", x+"px");
     $("video")[1].currentTime = 0;
-    $("#fullvideo").prop("muted", false);
+    //$("#fullvideo").prop("muted", false);
 }
 
 function tempoff() {
@@ -37,7 +37,7 @@ function tempoff() {
     $("#mapcontainer").slideDown();
     $("#footercontainer").slideDown();
     $("#fullvideo").css("display", "none");
-    $("#fullvideo").prop("muted", true);
+    //$("#fullvideo").prop("muted", true);
 }
 
 $(window).resize(function() {
