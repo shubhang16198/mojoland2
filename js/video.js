@@ -25,12 +25,12 @@ function tempoff() {
     $("video")[1].pause();
     $(".headline").css("display", "block");
     $(".close-btn").css("display", "none");
+    $("#homevid").slideDown();
     $("video")[0].play();
     $("#top-line-wrap").slideDown();
     $("#logo").slideDown();
     $("#navigation-bar").slideDown();
     $("#bs-example-navbar-collapse-1").slideDown();
-    $("#homevid").slideDown();
     $("#main-section").slideDown();
     $("#panelcontainer").slideDown();
     $("#secondcontainer").slideDown();
