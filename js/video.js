@@ -37,6 +37,7 @@ function tempoff() {
     $("#mapcontainer").slideDown();
     $("#footercontainer").slideDown();
     $("#fullvideo").css("display", "none");
+    $("#homevid").css("width", "100%");
     //$("#fullvideo").prop("muted", true);
 }
 
