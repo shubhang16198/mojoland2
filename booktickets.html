@@ -115,39 +115,31 @@
                                     <li><a href="parks.html#aerosports" onclick="location.reload();">Aero Sports Park</a></li>
                                 </ul>
                             </li>
+                            <li><a href="booktickets.html">Book Tickets</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
                             <li><a href="gallery.html">Gallery</a></li>
                             <li><a href="terms.html">Terms</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
-            <section class="main" id="main-section" style="position: relative; top: -40px;">
-                <div class="container">
-                    <div class="row" style="background: #fff; padding-top: 10px;">
-                        <div class="col-lg-4" id="ticketwrapper">
-                            <div class="slot">
-                                <div class="blockHead"><span class="blocktext">Book Tickets</span>
-                                </div>
-                                <a href="#" class="ticket">
-                                    <b></b>
-                                    <c></c>
-                                    <d></d>
-                                    <em>
-                                        <b></b>
-                                        <c></c>
-                                    </em>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-8" align="center">
-                            <form class="navbar-form">
-                                <div class="row">
-                                    <div class="form-group col-md-6 col-lg-6">
-                                        <label for="when" class="control-label">Date</label><br>
-                                        <input type="text" id="when" name="when" class="form-control" placeholder="Date" style="padding: 5px; border: 1px solid #bbb; border-radius: 4px;" />
+            
+            <div class="container">
+                <div class="row">
+                    <h2 style="font-weight: bold; font-family: 'Raleway', sans-serif;">Book Tickets</h2>
+                    <br>
+                </div>
+                <!-- -->
+                    <div class="row">
+                        <div class="activity-form">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Select Date </label>
+                                        <input class="form-control" type="text" placeholder="Click here" name="book_date" value='' id="book_date">
                                         <script type="text/javascript">
                                             $(function() {
-                                                $('input[name="when"]').daterangepicker({
+                                                $('input[name="book_date"]').daterangepicker({
                                                     singleDatePicker: true,
                                                     showDropdowns: true
                                                 },
@@ -156,109 +148,154 @@
                                             });
                                         </script>
                                     </div>
-
-                                    <div class="form-group col-md-6 col-lg-6">
-                                        <label for="activity" class="control-label">Activity</label><br>
-                                        <select name="activity" id="activity" class="form-control">
-                                            <option>Lagoon Water Park</option>
-                                            <option>Adventura Adventure Park</option>
-                                        </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <h3 style="font-weight: bold;">Lagoon Water Park</h3>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Students </label>
+                                        <select class="form-control water" name="studentWater" id="studentWater">
+                                        <option value=0>0</option><option value=1>1</option><option value=2>2</option><option value=3>3</option><option value=4>4</option><option value=5>5</option><option value=6>6</option><option value=7>7</option><option value=8>8</option><option value=9>9</option><option value=10>10</option><option value=11>11</option><option value=12>12</option></select>
                                     </div>
                                 </div>
-                                <br>
-                                <div class="row">
-                                    <div class="form-group col-md-6 col-lg-6">
-                                        <div class="popover-markup">
-                                            <div class="trigger form-group"><i class="fa fa-users input-icon input-icon-highlight"></i>
-                                                <label class="control-label">Number of tickets</label><br>
-                                                <input type="text" name="tickets" id="tickets" class="form-control" value="1" disabled style="cursor: pointer; background-color: #fff; padding-right: 0;" />
-                                            </div>
-                                            <div class="content hide">
-                                                <div class="form-group">
-                                                    <label class="control-label col-md-5"><strong>Children</strong><br> <i> &nbsp;</i></label>
-                                                    <div class="input-group number-spinner col-md-7">
-                                                        <span class="input-group-btn">
-                                                            <a class="btn btn-danger" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></a>
-                                                        </span>
-                                                        <input type="text" disabled name="children" id="children" class="form-control text-center" value="0" max=9 min=0>
-                                                        <span class="input-group-btn">
-                                                            <a class="btn btn-info" data-dir="up"><span class="glyphicon glyphicon-plus"></span></a>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="control-label col-md-5"><strong>Students</strong><br> <i>&nbsp;</i></label>
-                                                    <div class="input-group number-spinner col-md-7">
-                                                        <span class="input-group-btn">
-                                                            <a class="btn btn-danger" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></a>
-                                                        </span>
-                                                        <input type="text" disabled name="students" id="students" class="form-control text-center" value="0" max=9 min=0>
-                                                        <span class="input-group-btn">
-                                                            <a class="btn btn-info" data-dir="up"><span class="glyphicon glyphicon-plus"></span></a>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="control-label col-md-5"><strong>Adults</strong><br> <i> &nbsp;</i></label>
-                                                    <div class="input-group number-spinner col-md-7">
-                                                        <span class="input-group-btn">
-                                                            <a class="btn btn-danger" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></a>
-                                                        </span>
-                                                        <input type="text" disabled name="adults" id="adults" class="form-control text-center" value="1" max=9 min=1>
-                                                        <span class="input-group-btn">
-                                                            <a class="btn btn-info" data-dir="up"><span class="glyphicon glyphicon-plus"></span></a>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="control-label col-md-5"><strong>Senior Citizen</strong><br> <i> &nbsp;</i></label>
-                                                    <div class="input-group number-spinner col-md-7">
-                                                        <span class="input-group-btn">
-                                                            <a class="btn btn-danger" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></a>
-                                                        </span>
-                                                        <input type="text" disabled name="senior" id="senior" class="form-control text-center" value="0" max=9 min=0>
-                                                        <span class="input-group-btn">
-                                                            <a class="btn btn-info" data-dir="up"><span class="glyphicon glyphicon-plus"></span></a>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="control-label col-md-5"><strong>Couples</strong><br> <i> &nbsp;</i></label>
-                                                    <div class="input-group number-spinner col-md-7">
-                                                        <span class="input-group-btn">
-                                                            <a class="btn btn-danger" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></a>
-                                                        </span>
-                                                        <input type="text" disabled name="couples" id="couples" class="form-control text-center" value="0" max=9 min=0>
-                                                        <span class="input-group-btn">
-                                                            <a class="btn btn-info" data-dir="up"><span class="glyphicon glyphicon-plus"></span></a>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                                <a class="btn btn-default btn-block demise">Select</a>
-                                            </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Adults </label>
+                                        <select class="form-control water" name="adultsWater" id="adultsWater">
+                                        <option value=0>0</option><option value=1>1</option><option value=2>2</option><option value=3>3</option><option value=4>4</option><option value=5>5</option><option value=6>6</option><option value=7>7</option><option value=8>8</option><option value=9>9</option><option value=10>10</option><option value=11>11</option><option value=12>12</option></select>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Price <small style="font-size:10px;">(INR.)</small> </label>
+                                        <input class="form-control totalAmount water" type="text" value="0" name="totalWater" id="WaterAmount" readonly>
+                                        <script type="text/javascript">
+                                            $("#studentWater").change(function() {
+                                                $('input[name="totalWater"]').val(parseInt($('#studentWater option:selected').attr("value")) * 500 + 
+                                                    parseInt($('#adultsWater option:selected').attr("value")) * 600);
+                                            });
+                                            $("#adultsWater").change(function() {
+                                                $('input[name="totalWater"]').val(parseInt($('#studentWater option:selected').attr("value")) * 500 + 
+                                                    parseInt($('#adultsWater option:selected').attr("value")) * 600);
+                                            });
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="activity-form">
+                                    <div class="col-md-3">
+                                        <h3 style="font-weight: bold;">Adventure Park</h3>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label>Students </label>
+                                            <select class="form-control Adventure" name="studentAdventure" id="studentAdventure">
+                                            <option value=0>0</option><option value=1>1</option><option value=2>2</option><option value=3>3</option><option value=4>4</option><option value=5>5</option><option value=6>6</option><option value=7>7</option><option value=8>8</option><option value=9>9</option><option value=10>10</option><option value=11>11</option><option value=12>12</option></select>
                                         </div>
                                     </div>
-                                    <div class="form-group col-md-6 col-lg-6">
-                                        <label for="when" class="control-label">Price</label><br>
-                                        <input type="text" class="form-control" disabled placeholder="Price" style="padding: 5px; border: 1px solid #bbb; border-radius: 2px;" />
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label> Adults </label>
+                                            <select class="form-control Adventure" name="adultsAdventure" id="adultsAdventure">
+                                            <option value=0>0</option><option value=1>1</option><option value=2>2</option><option value=3>3</option><option value=4>4</option><option value=5>5</option><option value=6>6</option><option value=7>7</option><option value=8>8</option><option value=9>9</option><option value=10>10</option><option value=11>11</option><option value=12>12</option></select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label>Price <small style="font-size:10px;">(INR.)</small> </label>
+                                            <input id="AdventureTotal" type="text" name="totalAdventure" class="form-control Adventure" value="0" readonly>
+                                            <script type="text/javascript">
+                                                $("#studentAdventure").change(function() {
+                                                    $('input[name="totalAdventure"]').val(parseInt($('#studentAdventure option:selected').attr("value")) * 300 + 
+                                                        parseInt($('#adultsAdventure option:selected').attr("value")) * 400);
+                                                });
+                                                $("#adultsAdventure").change(function() {
+                                                    $('input[name="totalAdventure"]').val(parseInt($('#studentAdventure option:selected').attr("value")) * 300 + 
+                                                        parseInt($('#adultsAdventure option:selected').attr("value")) * 400);
+                                                });
+                                            </script>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"></div>
-                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style="padding-left: 15px;"><br>
-                                        <button class="btn btn-success btn-block">
-                                            <span style="font-weight: bold;">
-                                                Book Now!
-                                            </span>
-                                        </button>
+                            </div>
+                            <div class="row">
+                                <div class="activity-form">
+                                    <div class="col-md-3">
+                                        <h3 style="font-weight: bold;">Combo</h3>
                                     </div>
-                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"></div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label>Students </label>
+                                            <select class="form-control combo" name="comboStudents" id="comboStudents">
+                                            <option value=0>0</option><option value=1>1</option><option value=2>2</option><option value=3>3</option><option value=4>4</option><option value=5>5</option></select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label> Adults </label>
+                                            <select class="form-control combo" name="adultsCombo" id="adultsCombo">
+                                            <option value=0>0</option><option value=1>1</option><option value=2>2</option><option value=3>3</option><option value=4>4</option><option value=5>5</option></select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label>Price <small style="font-size:10px;">(INR.)</small> </label>
+                                            <input id="ComboTotal" class="form-control " type="text" value="0" name="totalCombo" id="" readonly>
+                                            <script type="text/javascript">
+                                                $("#comboStudents").change(function() {
+                                                    $('input[name="totalCombo"]').val(parseInt($('#comboStudents option:selected').attr("value")) * 700 + 
+                                                        parseInt($('#adultsCombo option:selected').attr("value")) * 800);
+                                                });
+                                                $("#adultsCombo").change(function() {
+                                                    $('input[name="totalCombo"]').val(parseInt($('#comboStudents option:selected').attr("value")) * 700 + 
+                                                        parseInt($('#adultsCombo option:selected').attr("value")) * 800);
+                                                });
+                                            </script>
+                                        </div>
+                                    </div>
                                 </div>
-                            </form>
+                            </div>
+
+                            <div class="clearfix"></div>
+                            <div class="row">
+                                <div class="col-md-4"></div>
+                                <div class="col-md-4">
+                                    <div class="form-group total-amount">
+                                        <label style="color:#a62d43;">Total Amount <span style="font-size: 12px;">(INR.)</span> </label>
+                                        <input style="background: none;text-align: center;color: #446627;font-size: 27px;border: 0px;box-shadow: none;font-weight: bold;" type="text" value="" name="total" id="total" readonly>
+                                        <script type="text/javascript">
+                                            $("#studentWater, #studentAdventure, #comboStudents, #adultsCombo, #adultsAdventure, #adultsWater").change(function() {
+                                                $("#total").val(parseInt($("#WaterAmount").val()) + parseInt($("#AdventureTotal").val()) + parseInt($("#ComboTotal").val()));
+                                            })
+                                        </script>
+                                    </div>
+                                </div>
+                                <div class="col-md-4"></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-4"></div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label style="visibility:hidden;">Book Now </label>
+                                        <button type="submit" id="actionbutt" class="btn btn-lg btn-block btn-primary" name="action" value="bookNow">Book Now!</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-4"></div>
+                            </div>
+
                         </div>
-                    </div>
+                        <span style="display:block;text-align:center" class="note"><b>Note:</b> <small>Tickets once sold can not be cancelled or returned.</small></span>
+
+                    <!-- -->
+
                 </div>
-            </section>
+            </div>
             <div class="container" id="footercontainer">
                 <div class="row">
                     <br><br>
@@ -333,3 +370,4 @@
             </script>
         </body>
     </html>
+

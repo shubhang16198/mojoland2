@@ -9,7 +9,7 @@ $(function () {
     });
 
     // open popover & inital value in form
-    var passengers = [1,0,0,0,0];
+    var passengers = [0,0,0,0,0];
     $('.popover-markup>.trigger').click(function (e) {
         e.stopPropagation();
         $(".popover-content input").each(function(i) {

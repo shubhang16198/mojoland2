@@ -448,6 +448,12 @@ img.galleryimg {
     max-width: 100%;
 }
 
+@media only screen and (max-width: 768px) {
+    .grid-item {
+        width: 100%;
+    }
+}
+
 
 
 .park-details .row {
@@ -690,6 +696,9 @@ and (max-width: 800px) {
         transform: scale(2.4, 1);
     }
 
+    .attractiontime {
+        opacity: 1;
+    }
 }
 
 
