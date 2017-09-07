@@ -18,7 +18,7 @@ function temp() {
     x = (window.innerWidth - $("#fullvideo").width()) / 2;
     $("#fullvideo").css("margin-left", x+"px");
     $("video")[1].currentTime = 0;
-    //$("#fullvideo").prop("muted", false);
+    $("#fullvideo").prop("muted", false);
 }
 
 function tempoff() {
@@ -30,7 +30,7 @@ function tempoff() {
     $("#top-line-wrap").slideDown();
     $("#logo").slideDown();
     $("#navigation-bar").slideDown();
-    //$("#bs-example-navbar-collapse-1").slideDown();
+    ///$("#bs-example-navbar-collapse-1").slideDown();
     $("#main-section").slideDown();
     $("#panelcontainer").slideDown();
     $("#secondcontainer").slideDown();
@@ -38,7 +38,7 @@ function tempoff() {
     $("#footercontainer").slideDown();
     $("#fullvideo").css("display", "none");
     $("#homevid").css("width", "100%");
-    //$("#fullvideo").prop("muted", true);
+    $("#fullvideo").prop("muted", true);
 }
 
 $(window).resize(function() {
