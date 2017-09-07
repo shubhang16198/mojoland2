@@ -1,4 +1,5 @@
 function temp() {
+    $('#fullvideo').css("width", "100%");
     $(".headline").css("display", "none");
     $(".close-btn").css("display", "block");
     $("video")[0].pause();
@@ -17,7 +18,6 @@ function temp() {
     $("#fullvideo").height(window.innerHeight - 5);
     x = (window.innerWidth - $("#fullvideo").width()) / 2;
     //$("#fullvideo").css("margin-left", x+"px");
-    $('#fullvideo').css("width", "100%");
     $("video")[1].currentTime = 0;
     $("#fullvideo").prop("muted", false);
 }
