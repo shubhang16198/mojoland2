@@ -57,9 +57,24 @@
                     });
                 });
 
-                $("video")[0].oncanplay = function() {
+                function homevidoncanplay() {
                     $("#homevid").css("width", "100%");
                 }
+
+                $(function() {
+                    if ($(window).innerWidth() <= 768) {
+                        $("#homevid").css("width", "100%");
+                    }
+                });
+
+                $(window).resize(function() {
+                   if ($(window).innerWidth() <= 768) {
+                        $("#homevid").css("width", "100%");
+                    }
+                    else {
+                        $("#homevid").css("width", "auto");
+                    }
+                });
 
             </script>
         </head>
@@ -148,7 +163,7 @@
                         <span style="cursor: pointer;"><img src="img/close.png" width="32"></span>
                     </div>
 
-                    <video id="homevid" muted autoplay loop poster="img/entrance.jpg">
+                    <video id="homevid" muted autoplay loop poster="img/entrance.jpg" oncanplay="homevidoncanplay();">
                         <source src="img/videoback.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
                     </video>
 
