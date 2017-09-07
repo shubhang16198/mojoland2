@@ -23,9 +23,7 @@
     max-width: 100%;
 }
 
-.video-container video {
-    width: 100%; 
-}
+
 .video-container .poster img {
     width: 100%;
     bottom: 0;

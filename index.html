@@ -57,6 +57,10 @@
                     });
                 });
 
+                $("video")[0].oncanplay = function() {
+                    $("#homevid").css("width", "100%");
+                }
+
             </script>
         </head>
         <body>
@@ -130,7 +134,7 @@
                 </div>
             </nav>
             <div class="homepage-hero-module">
-                <div class="video-container">
+                <div class="video-container" align="center">
                     <div class="title-container">
                         <div class="headline">
                             <h3 id="fullvideotext">

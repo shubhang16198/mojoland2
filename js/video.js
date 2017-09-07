@@ -16,7 +16,7 @@ function temp() {
     $("#fullvideo").css("display", "block");
     $("#fullvideo").height(window.innerHeight - 5);
     x = (window.innerWidth - $("#fullvideo").width()) / 2;
-    $("#fullvideo").css("margin-left", x+"px");
+    //$("#fullvideo").css("margin-left", x+"px");
     $("video")[1].currentTime = 0;
     $("#fullvideo").prop("muted", false);
 }
@@ -37,7 +37,6 @@ function tempoff() {
     $("#mapcontainer").slideDown();
     $("#footercontainer").slideDown();
     $("#fullvideo").css("display", "none");
-    $("#homevid").css("width", "100%");
     $("#fullvideo").prop("muted", true);
 }
 
