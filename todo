@@ -4,12 +4,11 @@ XXX 3. 3 tabs instead of 4 on the landing page and the parks page
 XXX 4. Images on the parks page in the responsive version need to be improved in terms of size and alignment
 XXX 5. Play full video button goes to the corner of the video
 XXX 6. The animation on scrolling down, by which the images etc appear, is a little slow. Makes it feel like the website is stuck for a second
-7. In the responsive version, since the video has to be voluntarily played, the black part doesn't look good in the meanwhile. We should add some image in the background
+XXX 7. In the responsive version, since the video has to be voluntarily played, the black part doesn't look good in the meanwhile. We should add some image in the background
 8. Should the animation of the tabs in the responsive version  on the landing page by which the text appears not be automatic?
 Otherwise the it's existence can't be conceived.
 
--Slow animation when images at home page are clicked
--remove the navbar in parks page while scrolling down
--put the names of attractions (timings/price only if can be fit in same line)
--extra links at bottom layout is different for (home page, parks page) and (gallery, terms page), keep one for all
--gallery should have one column rather than 3
+XXX -remove the navbar in parks page while scrolling down
+XXX -put the names of attractions (timings/price only if can be fit in same line)
+XXX -extra links at bottom layout is different for (home page, parks page) and (gallery, terms page), keep one for all
+XXX -gallery should have one column rather than 3
