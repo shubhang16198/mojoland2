@@ -30,7 +30,7 @@ function tempoff() {
     $("#top-line-wrap").slideDown();
     $("#logo").slideDown();
     $("#navigation-bar").slideDown();
-    $("#bs-example-navbar-collapse-1").slideDown();
+    //$("#bs-example-navbar-collapse-1").slideDown();
     $("#main-section").slideDown();
     $("#panelcontainer").slideDown();
     $("#secondcontainer").slideDown();
