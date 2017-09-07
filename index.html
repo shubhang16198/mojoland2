@@ -58,7 +58,8 @@
                 });
 
                 function homevidoncanplay() {
-                    $("#homevid").css("width", "100%");
+                    if ($(".container").css("width") != $(window).innerWidth()+"px")
+                        $("#homevid").css("width", "100%");
                 }
 
                 $(function() {
